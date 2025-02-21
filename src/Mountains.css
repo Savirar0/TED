@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,39 +9,39 @@
     width: 100%;
     height: 100%;
     background: #111b29;
-    overflow-x: hidden; /* Prevent horizontal overflow */
-    overflow-y: auto; /* Ensure vertical scrolling is enabled */
+    overflow-x: hidden; 
+    overflow-y: auto; 
   }
   
-  /* Container for the entire component */
+
   .mountains-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
   }
   
-  /* Scroll trigger element */
+ 
   .scrollDist {
     width: 100%;
-    height: 200vh; /* Matches CodePen's scroll distance */
-    background: transparent; /* Ensure no visual interference */
+    height: 200vh; 
+    background: transparent; 
   }
   
-  /* Main content area */
+
   main {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; /* Use viewport width */
-    height: 100vh; /* Full viewport height */
+    width: 100vw; 
+    height: 100vh; 
     background: #fff;
-    overflow: hidden; /* Prevent overflow causing gaps */
+    overflow: hidden; 
   }
   
-  /* SVG styling */
+
   svg {
     width: 100%;
     height: 100%;
-    display: block; /* Remove any inline spacing */
-    object-fit: cover; /* Ensure SVG covers the area without gaps */
+    display: block; 
+    object-fit: cover;
   }

@@ -6,24 +6,25 @@
   z-index: 1000;
 }
 
-/* Top Navbar - Always Fixed */
 .top-navbar {
   background: black;
-  color: white;
-  padding: 10px 15px; /* Reduced padding */
+  color: rgb(255, 0, 0);
+  padding: 10px 15px; 
   text-align: center;
   position: relative;
-  z-index: 2; /* Always on top */
+  z-index: 2; 
 }
+
+
 
 .logo {
-  height: 40px; /* Reduced logo size */
+  height: 40px; 
 }
 
-/* Bottom Navbar - Moves Behind */
+
 .bottom-navbar {
-  background: red;
-  padding: 5px 0; /* Reduced padding */
+  background: rgb(0, 0, 0);
+  padding: 5px 0; 
   text-align: center;
   position: absolute;
   top: 100%;
@@ -31,31 +32,36 @@
   transition: transform 0.5s ease-in-out;
 }
 
-/* Bottom Navbar Hidden on Scroll Down (Slides Up) */
+
 .hidden {
   transform: translateY(-100%);
 }
 
-/* Bottom Navbar Visible on Scroll Up (Slides Down) */
+
 .visible {
   transform: translateY(0);
 }
 
-/* Navigation Links */
+
 .bottom-navbar ul {
   list-style: none;
   font-weight: bolder;
+  font-size: large;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 170px; /* Reduced spacing */
+  gap: 120px;
 }
 
 .bottom-navbar a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 12px; /* Smaller font size */
-  padding: 3px 6px; /* Reduced padding inside links */
+  font-size: 12px; 
+  padding: 3px 6px; 
+}
+
+.bottom-navbar a:hover{
+  color: red;
 }
