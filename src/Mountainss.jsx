@@ -7,33 +7,49 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Mountains = () => {
   useEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".scrollDist",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: 1,
-      },
+    // Ensure DOM is ready before initializing GSAP
+    gsap.registerPlugin(ScrollTrigger);
+
+    let ctx = gsap.context(() => {
+      // Create the timeline with ScrollTrigger
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".scrollDist",
+          start: "top top",
+          end: "bottom bottom",
+          scrub: 1,
+          pin: true, // Pin the main content while scrolling
+          markers: true, // Optional: Add markers for debugging (remove in production)
+        },
+      });
+
+      // Adjusted y values to match the Dribbble GIF parallax effect
+      tl.fromTo(".sky", { y: 0 }, { y: -200 }, 0) // Sky moves slowly
+        .fromTo(".cloud1", { y: 100 }, { y: -800 }, 0) // Clouds move faster
+        .fromTo(".cloud2", { y: -150 }, { y: -500 }, 0)
+        .fromTo(".cloud3", { y: -50 }, { y: -650 }, 0)
+        .fromTo(".mountBg", { y: -10 }, { y: -100 }, 0) // Background mountain moves slowest
+        .fromTo(".mountMg", { y: -30 }, { y: -250 }, 0) // Middle mountain moves moderately
+        .fromTo(".mountFg", { y: -50 }, { y: -500 }, 0); // Foreground mountain moves fastest
     });
 
-    tl.fromTo(".sky", { y: 0 }, { y: -200 }, 0)
-      .fromTo(".cloud1", { y: 100 }, { y: -800 }, 0)
-      .fromTo(".cloud2", { y: -150 }, { y: -500 }, 0)
-      .fromTo(".cloud3", { y: -50 }, { y: -650 }, 0)
-      .fromTo(".mountBg", { y: -10 }, { y: -100 }, 0)
-      .fromTo(".mountMg", { y: -30 }, { y: -250 }, 0)
-      .fromTo(".mountFg", { y: -50 }, { y: -600 }, 0);
+    // Cleanup on unmount
+    return () => ctx.revert();
   }, []);
 
   return (
     <div className="mountains-container">
       <div className="scrollDist"></div>
       <main>
-        <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
           <mask id="m">
             <g className="cloud1">
               <rect fill="#fff" width="100%" height="801" y="799" />
-              <image xlinkHref="https://assets.codepen.io/721952/cloud1Mask.jpg" width="1200" height="800" />
+              <image
+                xlinkHref="https://assets.codepen.io/721952/cloud1Mask.jpg"
+                width="1200"
+                height="800"
+              />
             </g>
           </mask>
           <image className="sky" xlinkHref="https://assets.codepen.io/721952/sky.jpg" width="1200" height="590" />
@@ -50,8 +66,3 @@ const Mountains = () => {
 };
 
 export default Mountains;
-
-
-
-
-
