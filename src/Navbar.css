@@ -9,22 +9,23 @@
 .top-navbar {
   background: black;
   color: rgb(255, 0, 0);
-  padding: 10px 15px; 
-  text-align: center;
+  padding: 10px 15px;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
-
-
-
+/*Issue with logo.*/
 .logo {
   height: 40px; 
+  max-width: 100%; 
+  object-fit: contain; 
 }
-
 
 .bottom-navbar {
   background: rgb(0, 0, 0);
-  padding: 5px 0; 
+  padding: 5px 0;
   text-align: center;
   position: absolute;
   top: 100%;
@@ -32,16 +33,13 @@
   transition: transform 0.5s ease-in-out;
 }
 
-
 .hidden {
   transform: translateY(-100%);
 }
 
-
 .visible {
   transform: translateY(0);
 }
-
 
 .bottom-navbar ul {
   list-style: none;
@@ -50,7 +48,7 @@
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center the navigation items */
   gap: 120px;
 }
 
@@ -58,10 +56,10 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 12px; 
-  padding: 3px 6px; 
+  font-size: 12px;
+  padding: 3px 6px;
 }
 
-.bottom-navbar a:hover{
+.bottom-navbar a:hover {
   color: red;
 }
