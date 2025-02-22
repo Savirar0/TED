@@ -1,19 +1,41 @@
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import Navbar from "./components/Navbar";
-import Mountains from "./components/Mountains.jsx";
+import Mountains from "./components/Mountains";
 import Footer from "./components/Footer";
+import TeamPage from './pages/TeamPage';
+import SpeakersPage from './pages/speakersPage';
+import SchedulePage from './pages/schedulePage';
 
-function App() {
+const App = () => {
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState("home");
+
+  useEffect(() => {
+    const path = location.pathname;
+    setActiveLink(path === "/" ? "home" : path.substring(1));
+  }, [location]);
+
   return (
-    <div>
-      <Navbar />
-      <Mountains />
-
-      {/*<div style={{ height: "200vh", padding: "20px", background: "#f5f5f5" }}>
-        <h2>Scroll down and up to see the navbar effect</h2>
-      </div>*/}
+    <>
+      <Navbar activeLink={activeLink} />
+      <div className="min-h-screen bg-gray-50">
+        <Routes>
+          <Route path="/" element={<Mountains />} />
+          <Route path="/team" element={<TeamPage />} />
+          <Route path="/schedule" element={<SchedulePage />} />
+          <Route path="/speakers" element={<SpeakersPage />} />
+        </Routes>
+      </div>
       <Footer />
-    </div>
+    </>
   );
-}
+};
 
-export default App;
+const WrappedApp = () => (
+  <Router>
+    <App />
+  </Router>
+);
+
+export default WrappedApp;

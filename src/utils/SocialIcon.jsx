@@ -1,5 +1,5 @@
 import React from "react";
-import icons from "../utils/Icons";
+import icons from "../assets/Icons";
 
 const SocialIcon = ({ href, type }) => {  
     return (
