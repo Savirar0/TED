@@ -1,6 +1,6 @@
-import Navbar from "./Navbar";
-import Mountains from "./Mountainss";
-import Footer from "./Footer";
+import Navbar from "./components/Navbar";
+import Mountains from "./components/Mountains.jsx";
+import Footer from "./components/Footer";
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-import "./ShootingStars.css";
+import "../styles/shootingstars.css";
 
 const Shootingstars = () => {
     console.log("Shootingstars component rendered");

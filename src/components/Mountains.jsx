@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./Mountains.css";
+import "../styles/mountains.css";
 
 gsap.registerPlugin(ScrollTrigger);
 

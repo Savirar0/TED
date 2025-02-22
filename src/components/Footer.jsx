@@ -1,5 +1,6 @@
 import React from 'react';
-import SocialIcon from "./assets/SocialIcon.jsx"
+import SocialIcon from "../components/SocialIcon"; 
+
 const Footer = () => {
   const instagram = "https://www.instagram.com/tedxsreyas_institute";
   const linkedin = "https://www.linkedin.com/company/tedxsreyasinstitute/about/";

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import "./Navbar.css";
-import logo from "./assets/newlogo.png"; 
+import "../styles/navbar.css";
+import logo from "../assets/logos/newlogo.png"; 
 
 const Navbar = () => {
   const [hideBottomNav, setHideBottomNav] = useState(false);
