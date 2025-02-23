@@ -45,7 +45,7 @@ const Navbar = ({ activeLink }) => {
         variants={navbarAnimation}
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 flex justify-center space-x-8 py-3">
         <NavLink href="/" label="Home" active={activeLink === 'home'} />
             <NavLink href='/speakers' label="Speakers" active={activeLink === 'speakers'} />
             <NavLink href="/schedule" label="Schedule" active={activeLink === 'schedule'} />
