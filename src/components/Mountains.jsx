@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Mountains = () => {
   useEffect(() => {
-    // Ensure DOM is ready before initializing GSAP
+    
     gsap.registerPlugin(ScrollTrigger);
 
     let ctx = gsap.context(() => {
@@ -18,7 +18,7 @@ const Mountains = () => {
           end: "bottom top",
           scrub: 1,
           pin: true,
-          markers: false, // Keep markers off for production
+          markers: false, 
         },
       });
 
@@ -30,31 +30,31 @@ const Mountains = () => {
         .fromTo(".mountMg", { y: -30 }, { y: -250 }, 0)
         .fromTo(".mountFg", { y: -50 }, { y: -600 }, 0);
 
-      // Arrow button animations (matching CodePen exactly)
+      
       const arrowBtn = document.querySelector('#arrow-btn');
       if (arrowBtn) {
-        // Mouse enter (hover) - move arrow up 10px
+        
         arrowBtn.addEventListener('mouseenter', () => {
           gsap.to('.arrow', { y: 10, duration: 0.8, ease: 'back.inOut(3)', overwrite: 'auto' });
         });
 
-        // Mouse leave - return arrow to original position
+        
         arrowBtn.addEventListener('mouseleave', () => {
           gsap.to('.arrow', { y: 0, duration: 0.5, ease: 'power3.out', overwrite: 'auto' });
         });
 
-        // Click - scroll to the bottom of the viewport
+        
         arrowBtn.addEventListener('click', () => {
           gsap.to(window, { scrollTo: window.innerHeight, duration: 1.5, ease: 'power1.inOut' });
         });
       }
     });
 
-    // Cleanup on unmount
+    
     return () => {
       ctx.revert();
       
-      // Cleanup event listeners if arrowBtn exists
+      
       const arrowBtn = document.querySelector('#arrow-btn');
       if (arrowBtn) {
         arrowBtn.removeEventListener('mouseenter', null);
@@ -67,7 +67,13 @@ const Mountains = () => {
   return (
     <div className="mountains-container" style={{ height: '200vh', position: 'relative', overflow: 'hidden' }}>
       <div className="scrollDist" style={{ height: '100vh' }}></div>
-      <main>
+      <main style={{
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100vh',
+}}>
         <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
           <mask id="m">
             <g className="cloud1">

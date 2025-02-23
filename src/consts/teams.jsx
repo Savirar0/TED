@@ -1,4 +1,5 @@
-const images = import.meta.glob("../assets/images/teams/*.(png|jpg|jpeg)");
+const images = import.meta.glob("../assets/images/teams/webdev/*");
+
 
 const teams = {
     'CORE TEAM': [
@@ -34,7 +35,7 @@ const teams = {
     {
         name: 'Esvin Joshua',
         role: 'Co-Lead',
-        image: images['../assets/images/teams/esvinjoshua.jpg'],
+        image: 'src/assets/images/teams/webdev/joshua.jpeg',
         socials: {
             github: 'https://wakandawebweaver.github.io',
             linkedin: 'https://www.linkedin.com/in/esvin-joshua/',

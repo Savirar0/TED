@@ -1,0 +1,14 @@
+.team-member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    transform: scale(1.1);
+    filter: grayscale(1);
+    transition: 400ms ease;
+  }
+  
+  .team-member-image:hover {
+    transform: scale(1);
+    filter: grayscale(0);
+  }

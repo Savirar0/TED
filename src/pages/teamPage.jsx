@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import NavigationBar from '../components/Navbar';
 import TeamMemberCard from '../components/cards/TeamMemberCard';
 import teams from '../consts/teams';
+import Navbar from '../components/Navbar';
 
-const TeamGrid = ({ teams }) => (
+const TeamGrid = () => (
   <div className="space-y-20">
     {Object.entries(teams).map(([teamName, members], index) => (
       <motion.div
@@ -53,9 +53,9 @@ const TeamGrid = ({ teams }) => (
 const TeamPage = () => {
   return (
     <div className="min-h-screen bg-black text-white">
-      <NavigationBar activeLink="team" />
+      <Navbar activeLink="team" />
       <main className="container mx-auto px-4 py-12 max-w-7xl">
-        <TeamGrid teams={teams} />
+        <TeamGrid />
       </main>
     </div>
   );
