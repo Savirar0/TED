@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialIcon from "../utils/SocialIcon";
+import '../styles/Footer.css';
 
 const Footer = () => {
   const instagram = "https://www.instagram.com/tedxsreyas_institute";
@@ -8,20 +9,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-black text-white mt-96 pt-24 pb-12 z-10">
       <div className="absolute bottom-0 left-0 w-full z-0">
-        <svg
-          id="svg"
-          viewBox="0 0 1440 590"
-          xmlns="http://www.w3.org/2000/svg"
-          className="transition duration-300 ease-in-out delay-150"
-        >
-          <path
-            d="M 0,600 L 0,150 C 47.24133678628684,158.00300900234308 94.48267357257367,166.00601800468615 152,189 C 209.51732642742633,211.99398199531385 277.3106424959921,249.9789369835985 327,224 C 376.6893575040079,198.0210630164015 408.27475644345793,108.07823406091994 455,100 C 501.72524355654207,91.92176593908006 563.5903317301764,165.70812677272167 626,184 C 688.4096682698236,202.29187322727833 751.3639166358365,165.08925884819337 800,160 C 848.6360833641635,154.91074115180663 882.9540017264769,181.93483783450483 932,175 C 981.0459982735231,168.06516216549517 1044.8200764582562,127.17138981378714 1107,114 C 1169.1799235417438,100.82861018621286 1229.7656924404982,115.37960291034653 1285,126 C 1340.2343075595018,136.62039708965347 1390.1171537797509,143.31019854482673 1440,150 L 1440,600 L 0,600 Z"
-            stroke="none"
-            fill="#ff0000"
-            fillOpacity="0.53"
-            className="transition-all duration-300 ease-in-out delay-150"
-          ></path>
-        </svg>
+      <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" className="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="100%" y1="46%" x2="0%" y2="54%"><stop offset="5%" stopColor="#f78da7"></stop><stop offset="95%" stopColor="#ff0000"></stop></linearGradient></defs><path d="M 0,600 L 0,350 C 73.45517004465819,320.32085194091377 146.91034008931638,290.64170388182754 210,299 C 273.0896599106836,307.35829611817246 325.8138096873927,353.7540364136036 400,374 C 474.1861903126073,394.2459635863964 569.834421161113,388.3421504637581 643,388 C 716.165578838887,387.6578495362419 766.8485056681553,392.8773617313638 822,402 C 877.1514943318447,411.1226382686362 936.7715561662658,424.1484026107867 1003,406 C 1069.2284438337342,387.8515973892133 1142.0652696667812,338.52902782548955 1216,324 C 1289.9347303332188,309.47097217451045 1364.9673651666094,329.73548608725525 1440,350 L 1440,600 L 0,600 Z" stroke="none" strokeWidth="0" fill="url(#gradient)" fillOpacity="1" className="transition-all duration-300 ease-in-out delay-150 path-1"></path><defs><linearGradient id="gradient" x1="100%" y1="46%" x2="0%" y2="54%"><stop offset="5%" stopColor="#f78da7"></stop><stop offset="95%" stopColor="#ff0000"></stop></linearGradient></defs><path d="M 0,600 L 0,150 C 58.708347646856765,179.79663345929234 117.41669529371353,209.59326691858467 192,190 C 266.58330470628647,170.40673308141533 357.0415664720027,101.42356578495362 437,91 C 516.9584335279973,80.57643421504638 586.4170388182754,128.7124699416008 654,141 C 721.5829611817246,153.2875300583992 787.2902782548953,129.72655444864307 852,117 C 916.7097217451047,104.27344555135693 980.4218481621435,102.38131226382689 1052,122 C 1123.5781518378565,141.61868773617311 1203.0223290965303,182.74819649604947 1269,191 C 1334.9776709034697,199.25180350395053 1387.4888354517348,174.62590175197528 1440,150 L 1440,600 L 0,600 Z" stroke="none" strokeWidth="0" fill="url(#gradient)" fillOpacity="0.53" className="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
       </div>
       <div className="container mx-auto px-4 max-w-7xl relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
@@ -67,7 +55,7 @@ const Footer = () => {
 
         <div className="h-px bg-gray-700 my-12"></div>
 
-        <div className="text-center text-gray-400 text-sm">
+        <div className="text-center text-white text-sm">
           © 2025 TEDx Sreyas Institute. This independent TEDx event is operated under license from TED.
         </div>
       </div>

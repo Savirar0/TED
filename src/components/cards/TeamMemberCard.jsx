@@ -4,8 +4,8 @@ import '../../styles/teamMemberCard.css';
 
 const TeamMemberCard = ({ member }) => (
     <div className="relative bg-red-800 border-2 border-red-600 rounded-xl overflow-hidden p-6 
-                    transform hover:scale-105 transition-transform duration-300 hover:border-red-400 group">
-      <div className="w-full h-72 bg-black rounded-lg mb-6 overflow-hidden relative team-member-card">
+                    transform hover:scale-105 transition-transform duration-300 hover:border-red-400 group team-member-card">
+      <div className="w-full h-72 bg-black rounded-lg mb-6 overflow-hidden relative">
         <img 
             src={member.image} 
             alt={`${member.name}'s profile picture`}

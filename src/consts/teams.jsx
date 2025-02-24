@@ -4,21 +4,22 @@ const images = import.meta.glob("../assets/images/teams/webdev/*");
 const teams = {
     'CORE TEAM': [
         {
-            name: 'Akash Rao M.',
+            name: 'K V V S S Vardhini',
             role: 'Organizer',
+            image: 'src/assets/images/teams/core/vardhini.jpeg',
             socials: {
                 github: '#',
-                linkedin: '#',
-                instagram: '#'
+                linkedin: 'https://www.linkedin.com/in/vardhini-konijeti-33a211291',
+                instagram: 'https://www.instagram.com/iam_kvvvarddhini'
             }
         },
         {
-        name: 'K V V S S Vardhini',
+        name: 'Akash Rao M.',
         role: 'Co-Organizer',
         socials: {
             github: '#',
-            linkedin: 'https://www.linkedin.com/in/vardhini-konijeti-33a211291',
-            instagram: 'https://www.instagram.com/iam_kvvvarddhini'
+            linkedin: '#',
+            instagram: '#'
         }
     },
     ],
@@ -74,6 +75,7 @@ const teams = {
         {
             name: 'M.Sri Varun',
             role: 'Co-Lead',
+            image: 'src/assets/images/teams/hospitality/srivarun.jpeg',
             socials: {
                 github: '#',
                 linkedin: 'https://www.linkedin.com/in/manthena-srivarun-7b7a83290',
@@ -83,6 +85,7 @@ const teams = {
         {
             name: 'P.Manugnya',
             role: 'Member',
+            image: 'src/assets/images/teams/hospitality/manugnya.jpeg',
             socials: {
                 github: '#',
                 linkedin: '#',
@@ -130,6 +133,7 @@ const teams = {
         {
             name: 'J.Aum Aditya',
             role: 'Lead',
+            image: 'src/assets/images/teams/marketing/aumaditya.jpeg',
             socials: {
                 github: '#',
                 linkedin: '#',
@@ -139,6 +143,7 @@ const teams = {
         {
             name: 'J.Sri Lakshmi',
             role: 'Co-Lead',
+            image: 'src/assets/images/teams/marketing/srilakshmi.jpeg',
             socials: {
                 github: '#',
                 linkedin: '#',
@@ -148,6 +153,7 @@ const teams = {
         {
             name: 'R.Srinidhi',
             role: 'Member',
+            image: 'src/assets/images/teams/marketing/srinidhi.jpeg',
             socials: {
                 github: '#',
                 linkedin: '#',
@@ -215,6 +221,7 @@ const teams = {
       {
         name: 'Vishnu Sai Paineni',
         role: 'Lead',
+        image: 'src/assets/images/teams/sponsorship/vishnu.jpeg',
         socials: {
             github: '#',
             linkedin: 'https://www.linkedin.com/in/vishnu-sai-paineni-268257291',

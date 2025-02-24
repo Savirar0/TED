@@ -54,6 +54,7 @@ const TeamPage = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       <Navbar activeLink="team" />
+      <div className='h-36' />
       <main className="container mx-auto px-4 py-12 max-w-7xl">
         <TeamGrid />
       </main>

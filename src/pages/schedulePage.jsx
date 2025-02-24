@@ -10,9 +10,7 @@ const SchedulePage = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       <NavigationBar activeLink="schedule" />
-
-      <div className='h-24' />
-
+      <div className='h-36' />
       <div className="container mx-auto px-6 py-12">
         <div className="grid gap-8">
           {schedule.map((event, index) => (
