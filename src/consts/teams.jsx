@@ -1,7 +1,26 @@
-const images = import.meta.glob("../assets/images/teams/webdev/*");
-
-
 const teams = {
+    'FACULTY CO-OORDINATORS': [
+        {
+            name: 'Ranjith Sir',
+            role: 'Faculty Co-Ordinator',
+            image: 'src/assets/images/teams/faculty/ranjith.jpeg',
+            socials: {
+                github: '#',
+                linkedin: '#',
+                instagram: '#'
+            }
+        },
+        {
+            name: 'Harsha Sir',
+            role: 'Faculty Co-Ordinator',
+            image: 'src/assets/images/teams/faculty/harsha.jpeg',
+            socials: {
+                github: '#',
+                linkedin: '#',
+                instagram: '#'
+            }
+        }
+    ],
     'CORE TEAM': [
         {
             name: 'K V V S S Vardhini',
@@ -27,6 +46,7 @@ const teams = {
     {
         name: 'P. Navadeep',
         role: 'Lead',
+        image: 'src/assets/images/teams/webdev/navadeep.jpeg',
         socials: {
             github: '#',
             linkedin: 'https://www.linkedin.com/in/peddamalla-navadeep-abaa01212',
@@ -45,7 +65,8 @@ const teams = {
     },
     {
         name: 'Srinivas Yejarla',
-        role: 'Design Lead',
+        role: 'Design',
+        image: 'src/assets/images/teams/webdev/srinivas.jpeg',
         socials: {
             github: '#',
             linkedin: 'https://www.linkedin.com/in/srinu-yejarla-46a21a291',
@@ -54,7 +75,8 @@ const teams = {
     },
     {
         name: 'Syeda Reshmi',
-        role: 'Design Co-Lead',
+        role: 'Design',
+        image: 'src/assets/images/teams/webdev/reshmi.jpeg',
         socials: {
             github: '#',
             linkedin: 'https://www.linkedin.com/in/syeda-reshmi-85b17b34b',
@@ -64,8 +86,9 @@ const teams = {
     ],
     'HOSPITALITY TEAM' : [
         {
-            name: 'B.Chaitra',
+            name: 'B. Chaitra',
             role: 'Lead',
+            image: 'src/assets/images/teams/hospitality/chaitra.jpeg',
             socials: {
                 github: '#',
                 linkedin: '#',
@@ -73,7 +96,7 @@ const teams = {
             }
         },
         {
-            name: 'M.Sri Varun',
+            name: 'M. Sri Varun',
             role: 'Co-Lead',
             image: 'src/assets/images/teams/hospitality/srivarun.jpeg',
             socials: {
@@ -83,7 +106,7 @@ const teams = {
             }
         },
         {
-            name: 'P.Manugnya',
+            name: 'P. Manugnya',
             role: 'Member',
             image: 'src/assets/images/teams/hospitality/manugnya.jpeg',
             socials: {
@@ -95,6 +118,7 @@ const teams = {
         {
             name: 'U SHASHI KUMAR',
             role: 'Member',
+            image: 'src/assets/images/teams/hospitality/shashikum.jpeg',
             socials: {
                 github: '#',
                 linkedin: '#',
@@ -102,8 +126,9 @@ const teams = {
             }
         },
         {
-            name: 'M.Nithin',
+            name: 'M. Nithin',
             role: 'Member',
+            image: 'src/assets/images/teams/hospitality/nithin.jpeg',
             socials: {
                 github: '#',
                 linkedin: '#',
@@ -113,6 +138,7 @@ const teams = {
         {
             name: 'Surabhi Goutham',
             role: 'Member',
+            image: 'src/assets/images/teams/hospitality/goutham.jpeg',
             socials: {
                 github: '#',
                 linkedin: 'https://www.linkedin.com/in/surabhi-goutham-47b4a4328',
@@ -122,6 +148,7 @@ const teams = {
         {
             name: 'Prachi Singh',
             role: 'Member',
+            image: 'src/assets/images/teams/hospitality/prachi.jpeg',
             socials: {
                 github: '#',
                 linkedin: 'https://www.linkedin.com/in/thakur-prachi-singh-chowhan-8b6160323',
@@ -131,7 +158,7 @@ const teams = {
     ],
     'MARKETING TEAM': [
         {
-            name: 'J.Aum Aditya',
+            name: 'J. Aum Aditya',
             role: 'Lead',
             image: 'src/assets/images/teams/marketing/aumaditya.jpeg',
             socials: {
@@ -141,7 +168,7 @@ const teams = {
             }
         },
         {
-            name: 'J.Sri Lakshmi',
+            name: 'J. Sri Lakshmi',
             role: 'Co-Lead',
             image: 'src/assets/images/teams/marketing/srilakshmi.jpeg',
             socials: {
@@ -151,7 +178,7 @@ const teams = {
             }
         },
         {
-            name: 'R.Srinidhi',
+            name: 'R. Srinidhi',
             role: 'Member',
             image: 'src/assets/images/teams/marketing/srinidhi.jpeg',
             socials: {
@@ -161,8 +188,9 @@ const teams = {
             }
         },
         {
-          name: 'D.Chandrakanth',
+          name: 'D. Chandrakanth',
           role: 'Member',
+        image: 'src/assets/images/teams/marketing/chandrakanth.jpeg',
           socials: {
               github: '#',
               linkedin: 'http://linkedin.com/in/chandra-kanth-6aa959306',
@@ -170,8 +198,9 @@ const teams = {
           }
         },
         {
-          name: 'G.srinitha',
+          name: 'G. Srinitha',
           role: 'Member',
+            image: 'src/assets/images/teams/marketing/srinitha.jpeg',
           socials: {
               github: '#',
               linkedin: 'https://www.linkedin.com/in/srinitha-g-944259330',
@@ -183,6 +212,7 @@ const teams = {
       {
         name: 'V. Sai Ram',
         role: 'Lead',
+        image: 'src/assets/images/teams/production/sairam.jpeg',
         socials: {
             github: '#',
             linkedin: 'https://www.linkedin.com/in/sai-ram-nayak-174b2726b',
@@ -190,8 +220,9 @@ const teams = {
         }
       },
       {
-        name: 'M.Sudarshan',
+        name: 'M. Sudarshan',
         role: 'Co-Lead',
+        image: 'src/assets/images/teams/production/sudarsh.jpeg',
         socials: {
             github: '#',
             linkedin: '#',
@@ -201,6 +232,7 @@ const teams = {
       {
         name: 'Varsha',
         role: 'Member',
+        image: 'src/assets/images/teams/production/varsha.jpeg',
         socials: {
             github: '#',
             linkedin: 'https://www.linkedin.com/in/varsha-vs-59a226291',
@@ -210,6 +242,7 @@ const teams = {
       {
         name: 'Adarsh P. R.',
         role: 'Member',
+        image: 'src/assets/images/teams/production/adarsh.jpeg',
         socials: {
             github: '#',
             linkedin: 'https://www.linkedin.com/in/adarsh-pr-3a126a349',
@@ -229,8 +262,9 @@ const teams = {
         }
       },
       {
-        name: 'P.Sri Harshini',
+        name: 'P. Sri Harshini',
         role: 'Co-Lead',
+        image: 'src/assets/images/teams/sponsorship/harshini.jpeg',
         socials: {
             github: '#',
             linkedin: 'https://www.linkedin.com/in/harshini-netha-15b252291',
@@ -238,8 +272,9 @@ const teams = {
         }
       },
       {
-        name: 'N.Sri Sritha Reddy',
+        name: 'N. Sri Sritha Reddy',
         role: 'Member',
+        image: 'src/assets/images/teams/sponsorship/srisritha.jpeg',
         socials: {
             github: '#',
             linkedin: 'http://linkedin.com/in/srisritha-reddy-neravetla-94ab60290',
