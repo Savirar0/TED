@@ -7,7 +7,6 @@ import schedule from '../consts/schedule';
 const SchedulePage = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
   
-  // Since your schedule doesn't have day information, we'll work with the full schedule
   const getEventIcon = (type) => {
     switch(type) {
       case "Talk":
@@ -25,7 +24,6 @@ const SchedulePage = () => {
     }
   };
   
-  // Get color based on event type
   const getEventColor = (type) => {
     switch(type) {
       case "Talk":
@@ -67,7 +65,6 @@ const SchedulePage = () => {
             </p>
           </motion.div>
           
-          {/* Timeline style schedule */}
           <div className="relative pb-12">
             {/* Timeline line */}
             <div className="absolute left-0 md:left-1/2 transform md:-translate-x-px top-0 h-full w-0.5 bg-gradient-to-b from-red-800 via-red-600 to-red-800"></div>
