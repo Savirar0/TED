@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Navbar from "./components/Navbar";
 import Mountains from "./components/Mountains";
 import Footer from "./components/Footer";
-import TeamPage from './pages/TeamPage';
+import TeamPage from './pages/teamPage';
 import SpeakersPage from './pages/speakersPage';
 import SchedulePage from './pages/schedulePage';
 
