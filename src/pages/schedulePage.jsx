@@ -42,7 +42,7 @@ const SchedulePage = () => {
   };
   
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="bg-black text-white">
       <NavigationBar activeLink="schedule" />
       <main className="relative">
         <div className="absolute top-0 right-0 w-1/2 h-screen bg-gradient-to-bl from-red-900/10 to-transparent opacity-30 pointer-events-none" />
@@ -66,7 +66,6 @@ const SchedulePage = () => {
           </motion.div>
           
           <div className="relative pb-12">
-            {/* Timeline line */}
             <div className="absolute left-0 md:left-1/2 transform md:-translate-x-px top-0 h-full w-0.5 bg-gradient-to-b from-red-800 via-red-600 to-red-800"></div>
             
             <div className="grid gap-8">
@@ -78,7 +77,6 @@ const SchedulePage = () => {
                   transition={{ duration: 0.3, delay: index * 0.05 }}
                   className={`relative ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12 md:ml-auto'} md:w-1/2`}
                 >
-                  {/* Timeline dot */}
                   <motion.div 
                     className={`hidden md:block absolute -left-3 md:left-auto ${index % 2 === 0 ? 'md:-right-3' : 'md:-left-3'} top-8 w-6 h-6 rounded-full ${getEventColor(event.type)} z-10`}
                     initial={{ scale: 0 }}
@@ -99,7 +97,6 @@ const SchedulePage = () => {
                         : "0 20px 25px -5px rgba(0, 0, 0, 0.2)" 
                     }}
                   >
-                    {/* Decorative line */}
                     <div className={`absolute top-0 left-0 w-2 h-full ${getEventColor(event.type)}`}></div>
                     
                     <div

@@ -262,8 +262,6 @@ const Mountains = () => {
               &gt;
             </button>
           </div>
-
-          <div className="h-px bg-gray-700 my-12"></div>
         </div>
       </section>
     </div>

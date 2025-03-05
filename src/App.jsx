@@ -19,7 +19,7 @@ const App = () => {
   return (
     <>
       <Navbar activeLink={activeLink} />
-      <div className="min-h-screen bg-gray-50">
+      <div className="h-full bg-gray-50">
         <Routes>
           <Route path="/" element={<Mountains />} />
           <Route path="/team" element={<TeamPage />} />
