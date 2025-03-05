@@ -136,7 +136,7 @@ const Mountains = () => {
         top: 0,
         left: 0,
         width: '100%',
-        height: '100vh',
+        height: '100%',
         zIndex: 10
       }}>
         <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
@@ -175,95 +175,6 @@ const Mountains = () => {
           <rect id="arrow-btn" width="100" height="100" opacity="0" x="550" y="330" style={{ cursor: "pointer" }} />
         </svg>
       </main>
-
-      {/* What is TEDx Section */}
-      <section 
-        className="tedx-about-section bg-black text-white"
-        style={{
-          position: 'relative',
-          width: '100%',
-          zIndex: 15,
-          marginTop: '100vh',
-          paddingTop: '4rem',
-          paddingBottom: '4rem'
-        }}
-      >
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-center">
-            <h2 className="text-5xl font-bold mb-6">
-              What is <span className="text-red-600">TED</span>x?
-            </h2>
-            <p className="text-xl max-w-4xl mx-auto leading-relaxed">
-              TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. These events are driven by a passionate community who celebrate locally-driven ideas and elevate them to a global stage. At TEDx Sreyas Institute, we believe in the power of ideas to inspire, challenge, and transform.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Speakers Section */}
-      <section 
-        className="speakers-section bg-black text-white"
-        style={{
-          position: 'relative',
-          width: '100%',
-          zIndex: 20,
-          paddingTop: '4rem',
-          paddingBottom: '4rem'
-        }}
-      >
-        <div className="container mx-auto px-4 max-w-7xl relative z-10">
-          <div className="flex items-center justify-center mb-6 relative">
-            {/* Left Navigation Button */}
-            <button 
-              onClick={prevSpeakers} 
-              disabled={currentSpeakerIndex === 0}
-              className={`absolute left-0 text-3xl text-white bg-gray-800 rounded-full p-4 
-                ${currentSpeakerIndex === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-600'} transition`}>
-              &lt;
-            </button>
-
-            <div className="flex overflow-hidden w-full">
-              <div className="flex justify-center w-full">
-                {displayedSpeakers.map((speaker, index) => (
-                  <div 
-                    key={index} 
-                    className="speaker-card p-6 bg-gray-800 rounded-lg shadow-lg mx-2 transition-transform duration-500 ease-in-out" 
-                    style={{ width: '30%', maxWidth: '300px' }}
-                  >
-                    <img 
-                      src={speaker.img} 
-                      alt={speaker.name} 
-                      className="w-full h-48 object-cover rounded-md mb-4" 
-                    />
-                    <h4 className="text-2xl font-bold text-center mb-4">{speaker.name}</h4>
-                    <div className="flex justify-center space-x-6">
-                      <SocialIcon 
-                        href={speaker.instagram} 
-                        type="instagram" 
-                        className="hover:scale-110 hover:text-red-400 transition transform duration-300" 
-                      />
-                      <SocialIcon 
-                        href={speaker.linkedin} 
-                        type="linkedin" 
-                        className="hover:scale-110 hover:text-blue-400 transition transform duration-300" 
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Right Navigation Button */}
-            <button 
-              onClick={nextSpeakers} 
-              disabled={currentSpeakerIndex + 3 >= speakers.length}
-              className={`absolute right-0 text-3xl text-white bg-gray-800 rounded-full p-4 
-                ${currentSpeakerIndex + 3 >= speakers.length ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-600'} transition`}>
-              &gt;
-            </button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

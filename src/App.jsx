@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Navbar from "./components/Navbar";
-import Mountains from "./components/Mountains";
+import Homepage from './pages/homePage';
 import Footer from "./components/Footer";
 import TeamPage from './pages/teamPage';
 import SpeakersPage from './pages/speakersPage';
@@ -18,10 +18,10 @@ const App = () => {
 
   return (
     <>
-      <Navbar activeLink={activeLink} />
+      <Navbar activeLink='home' />
       <div className="h-full bg-gray-50">
         <Routes>
-          <Route path="/" element={<Mountains />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/schedule" element={<SchedulePage />} />
           <Route path="/speakers" element={<SpeakersPage />} />
