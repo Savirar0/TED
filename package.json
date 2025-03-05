@@ -12,8 +12,10 @@
   "dependencies": {
     "framer-motion": "^12.4.7",
     "gsap": "^3.12.7",
+    "jquery": "^3.7.1",
     "lodash.debounce": "^4.0.8",
     "lucide-react": "^0.475.0",
+    "owl.carousel": "^2.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.2.0"

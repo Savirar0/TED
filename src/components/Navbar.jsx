@@ -29,14 +29,20 @@ const Navbar = ({ activeLink }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleBookClick = () => {
+    window.location.href = "https://unstop.com"; //need to change this**
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
-      <nav className="bg-gray-900/95 backdrop-blur-sm border-b border-gray-700 relative z-10">
-        <div className="max-w-7xl mx-auto px-4 flex justify-center h-16 items-center">
-            <img className="h-12 w-auto" src={logo} alt="TEDx Sreyas Logo" />
+      <nav className="flex items-center bg-gray-900/95 backdrop-blur-sm border-b border-gray-700 relative z-10 md:flex-col md:items-start">
+        <div className="max-w-7xl mx-auto px-4 flex items-center w-full h-16 justify-center">
+          <img className="h-12 w-auto mx-auto" src={logo} alt="TEDx Sreyas Logo" /> 
+          <button type="button" className="absolute right-4 px-3 py-2 text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900" onClick={handleBookClick}>
+          Get your Passes
+          </button>
         </div>
       </nav>
-
 
       <motion.div 
         className="bg-gray-900/95 backdrop-blur-sm w-full absolute top-16 z-0" 

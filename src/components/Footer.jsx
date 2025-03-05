@@ -17,13 +17,13 @@ const Footer = () => {
           <div className="flex flex-col justify-between space-y-8">
             <div className="space-y-4">
               <h3 className="text-5xl font-bold">
-                <span className="text-red-600">T</span>hinkers
+                <span className="text-red-600">T</span>hrivers
               </h3>
               <h3 className="text-5xl font-bold">
-                <span className="text-red-600">E</span>ncourage
+                <span className="text-red-600">E</span>xpeditors              
               </h3>
               <h3 className="text-5xl font-bold">
-                <span className="text-red-600">D</span>iscovery
+                <span className="text-red-600">D</span>reamers
               </h3>
             </div>
 

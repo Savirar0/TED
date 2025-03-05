@@ -129,3 +129,8 @@ svg {
     z-index: 0;
 }
 
+"dependencies": {
+  "gsap": "^3.12.7",
+  "jquery": "^3.7.1",
+  "owl.carousel": "^2.3.4"
+}
