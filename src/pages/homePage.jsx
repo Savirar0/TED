@@ -2,12 +2,11 @@ import React from "react";
 import Mountains from "../components/Mountains.jsx";
 import { WhatTEDx } from "../components/WhatTEDx";
 import CollegeImageGallerySection from "../components/CollegeImageGallerySection.jsx";
-import ParallaxMountains from "./scratch/ParallaxMountains.jsx";
 
 const Homepage = () => {
     return (
       <div className="h-full bg-black">
-        <ParallaxMountains />
+        <Mountains />
         <WhatTEDx />
         <CollegeImageGallerySection />
       </div>
