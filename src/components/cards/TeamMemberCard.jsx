@@ -3,7 +3,7 @@ import SocialIcon from "../../utils/SocialIcon";
 import { motion } from "framer-motion";
 import '../../styles/teamMemberCard.css';
 
-const TeamMemberCard = ({ member, animateInternals = true }) => (
+const TeamMemberCard = ({ member }) => (
   <motion.div
     className="relative bg-gradient-to-br from-black via-red-900 to-red-800 rounded-xl overflow-hidden
     transform transition-all duration-500 hover:shadow-2xl team-member-card"
@@ -31,11 +31,13 @@ const TeamMemberCard = ({ member, animateInternals = true }) => (
         <h3 className="text-2xl font-extrabold mb-2 tracking-wide text-white">{member.name}</h3>
         <div className="h-0.5 w-12 bg-red-500 mx-auto mb-3" />
         <p className="text-gray-200 font-medium mb-4 text-lg">{member.role}</p>
-        <div className="flex justify-center space-x-4 mt-4">
-          <SocialIcon href={member.socials.github} type="github" />
-          <SocialIcon href={member.socials.linkedin} type="linkedin" />
-          <SocialIcon href={member.socials.instagram} type="instagram" />
-        </div>
+        <div className="flex justify-center space-x-3 mt-3">
+            {Object.entries(member.socials).map(([platform, url]) => 
+              url !== "#" && (
+                <SocialIcon key={platform} href={url} type={platform} />
+              )
+            )}
+          </div>
       </div>
     </div>
   </motion.div>

@@ -58,7 +58,7 @@ const teams = {
         role: 'Co-Lead',
         image: 'src/assets/images/teams/webdev/joshua.jpeg',
         socials: {
-            github: 'https://wakandawebweaver.github.io',
+            github: 'https://www.github.com/wakandawebweaver',
             linkedin: 'https://www.linkedin.com/in/esvin-joshua/',
             instagram: 'https://www.instagram.com/esvinjoshua/'
         }
