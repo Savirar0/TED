@@ -126,7 +126,7 @@ const Mountains = () => {
 
   return (
     <div className="mountains-container" style={{ 
-      height: '300vh', // Increased height to accommodate new sections
+      height: '140vh', //greatest error, gap.
       position: 'relative', 
       overflow: 'hidden' 
     }}>
