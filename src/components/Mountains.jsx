@@ -121,7 +121,7 @@ const Mountains = () => {
     );
   };
 
-  // Get the 3 speakers to display
+  
   const displayedSpeakers = speakers.slice(currentSpeakerIndex, currentSpeakerIndex + 3);
 
   return (
