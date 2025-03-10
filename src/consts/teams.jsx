@@ -91,8 +91,8 @@ const teams = {
             image: 'src/assets/images/teams/hospitality/chaitra.jpeg',
             socials: {
                 github: '#',
-                linkedin: '#',
-                instagram: '#'
+                linkedin: 'https://www.linkedin.com/in/chaitra-bonagiri-404b61290',
+                instagram: 'https://www.instagram.com/chaitra_12_5'
             }
         },
         {
@@ -111,8 +111,8 @@ const teams = {
             image: 'src/assets/images/teams/hospitality/manugnya.jpeg',
             socials: {
                 github: '#',
-                linkedin: '#',
-                instagram: '#'
+                linkedin: 'https://www.linkedin.com/in/chaitra-bonagiri-404b61290',
+                instagram: 'https://www.instagram.com/manugnya_reddy'
             }
         },
         {
@@ -121,8 +121,8 @@ const teams = {
             image: 'src/assets/images/teams/hospitality/shashikum.jpeg',
             socials: {
                 github: '#',
-                linkedin: '#',
-                instagram: '#'
+                linkedin: 'https://www.linkedin.com/in/shashi-kumar-260215291',
+                instagram: 'https://www.instagram.com/shashii.xo'
             }
         },
         {
@@ -173,8 +173,8 @@ const teams = {
             image: 'src/assets/images/teams/marketing/srilakshmi.jpeg',
             socials: {
                 github: '#',
-                linkedin: '#',
-                instagram: '#'
+                linkedin: 'https://www.linkedin.com/in/jhade-sri-lakshmi-531212291',
+                instagram: 'https://www.instagram.com/sxnnuuuu'
             }
         },
         {
@@ -183,8 +183,8 @@ const teams = {
             image: 'src/assets/images/teams/marketing/srinidhi.jpeg',
             socials: {
                 github: '#',
-                linkedin: '#',
-                instagram: '#'
+                linkedin: 'https://www.linkedin.com/in/srinidhi-rachakonda-b58216291',
+                instagram: 'https://www.instagram.com/nidhuuu._'
             }
         },
         {
@@ -204,7 +204,7 @@ const teams = {
           socials: {
               github: '#',
               linkedin: 'https://www.linkedin.com/in/srinitha-g-944259330',
-              instagram: '#'
+              instagram: 'https://www.instagram.com/srinitha0___'
           }
         }
     ],
@@ -225,8 +225,8 @@ const teams = {
         image: 'src/assets/images/teams/production/sudarsh.jpeg',
         socials: {
             github: '#',
-            linkedin: '#',
-            instagram: '#'
+            linkedin: 'https://www.linkedin.com/in/sudarshan-maheshwari-9091aa332',
+            instagram: 'https://www.instagram.com/m.sudarshann'
         }
       },
       {

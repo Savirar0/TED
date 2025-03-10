@@ -1,7 +1,7 @@
 import React from "react";
 import Mountains from "../components/Mountains.jsx";
 import { WhatTEDx } from "../components/WhatTEDx";
-import { SpeakersSection } from "../components/SpeakersSection";
+import CollegeImageGallerySection from "../components/CollegeImageGallerySection.jsx";
 
 
 const Homepage = () => {
@@ -9,7 +9,7 @@ const Homepage = () => {
       <div className="h-full bg-gray-50 pt-32">
         <Mountains />
         <WhatTEDx />
-        <SpeakersSection />
+        <CollegeImageGallerySection />
       </div>
     );
 };
