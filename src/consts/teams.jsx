@@ -35,10 +35,11 @@ const teams = {
         {
         name: 'Akash Rao M.',
         role: 'Co-Organizer',
+        image: 'src/assets/images/teams/core/akash.jpeg',
         socials: {
             github: '#',
-            linkedin: '#',
-            instagram: '#'
+            linkedin: 'https://www.linkedin.com/in/akash-rao-mallareddy',
+            instagram: 'https://www.instagram.com/akash_mallareddy'
         }
     },
     ],
