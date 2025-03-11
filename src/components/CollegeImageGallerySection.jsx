@@ -17,9 +17,9 @@ const CollegeImageGallerySection = () => {
     },
     {
       id: 3,
-      src: "src/assets/images/college_gallery/college1.jpg",
-      alt: "Alumni Network",
-      caption: "College",
+      src: "src/assets/images/college_gallery/sa_2.jpeg",
+      alt: "college image",
+      caption: "STUDENT EVENTS",
     },
     {
       id: 4,
@@ -35,38 +35,37 @@ const CollegeImageGallerySection = () => {
     },
     {
       id: 6,
-      src: "/api/placeholder/400/420",
+      src: "src/assets/images/college_gallery/seminar.jpeg",
       alt: "Global Programs",
-      caption: "GLOBAL",
+      caption: "SEMINARIES",
     },
     {
       id: 7,
-      src: "/api/placeholder/400/480",
-      alt: "Arts & Culture",
-      caption: "ARTS",
+      src: "src/assets/images/college_gallery/faculty_pp.jpg",
+      alt: "Faculty image",
+      caption: "FACULTY",
     },
     {
       id: 8,
-      src: "/api/placeholder/400/450",
+      src: "src/assets/images/college_gallery/pasttedx.jpg",
       alt: "Student Activities",
       caption: "ACTIVITIES",
     },
     {
       id: 9,
-      src: "/api/placeholder/400/520",
+      src: "src/assets/images/college_gallery/student_activites.jpeg",
       alt: "Innovation",
-      caption: "INNOVATION",
+      caption: "STUDENT ACTIVITIES",
     },
   ];
 
   return (
     <div className="w-full bg-black text-white relative py-16">
-      {/* Background gradients */}
       <div className="absolute top-0 right-0 w-1/2 h-screen bg-gradient-to-bl from-red-900/10 to-transparent opacity-30 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-2/5 h-2/3 bg-gradient-to-tr from-red-700/5 to-transparent opacity-20 pointer-events-none" />
       
       <div className="container mx-auto px-6 max-w-6xl">
-        {/* Heading section with animations */}
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -84,7 +83,7 @@ const CollegeImageGallerySection = () => {
           </p>
         </motion.div>
         
-        {/* Gallery section with animations */}
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
