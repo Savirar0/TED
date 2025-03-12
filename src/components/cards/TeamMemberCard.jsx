@@ -23,9 +23,6 @@ const TeamMemberCard = ({ member }) => (
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.5 }}
         />
-        <div className="team-image-overlay">
-          <span className="text-sm font-bold tracking-wider">TEDx</span>
-        </div>
       </div>
       <div className="text-center relative z-10">
         <h3 className="text-2xl font-extrabold mb-2 tracking-wide text-white">{member.name}</h3>
@@ -33,9 +30,7 @@ const TeamMemberCard = ({ member }) => (
         <p className="text-gray-200 font-medium mb-4 text-lg">{member.role}</p>
         <div className="flex justify-center space-x-3 mt-3">
             {Object.entries(member.socials).map(([platform, url]) => 
-              url !== "#" && (
-                <SocialIcon key={platform} href={url} type={platform} />
-              )
+              <SocialIcon key={platform} href={url} type={platform} />
             )}
           </div>
       </div>

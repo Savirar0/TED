@@ -58,7 +58,7 @@ const TeamGrid = () => {
         >
           <TeamHeader title={teamName} />
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+            className="flex flex-wrap justify-center gap-8"
             initial="hidden"
             animate="visible"
             variants={{
@@ -74,6 +74,7 @@ const TeamGrid = () => {
             {members.map((member, idx) => (
               <motion.div
                 key={idx}
+                className="w-full sm:w-80 md:w-80 lg:w-80 xl:w-72"
                 variants={{
                   hidden: { opacity: 0, y: 20 },
                   visible: { opacity: 1, y: 0 },
