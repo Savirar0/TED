@@ -1,23 +1,4 @@
 const teams = {
-<<<<<<< HEAD
-    
-    'CORE TEAM': [
-
-        {
-            name: 'A. Hriday Reddy',
-            role: 'Vice Chairman',
-            image: '',
-            socials: {
-                github: '#',
-                linkedin: '#',
-                instagram: '#'
-            }
-        },
-        {
-            name: 'Dr. C. Uday Kiran',
-            role: 'Principal',
-            image: '',
-=======
     'CORE TEAM': [
         {
             name: 'Dr. C. Uday Kiran',
@@ -30,7 +11,7 @@ const teams = {
             }
         },
         {
-            name: 'A Hriday Reddy',
+            name: 'A. Hriday Reddy',
             role: 'Vice Chairman',
             image: 'src/assets/images/teams/core/vicechair.jpg',
             socials: {
@@ -43,7 +24,6 @@ const teams = {
             name: 'Ranjith Sir',
             role: 'Faculty Co-Ordinator',
             image: 'src/assets/images/teams/core/ranjith.jpeg',
->>>>>>> 369fb30ee49d61dd288a7d0621eda0b3a4812d0d
             socials: {
                 github: '#',
                 linkedin: '#',
@@ -60,20 +40,6 @@ const teams = {
                 instagram: '#'
             }
         },
-<<<<<<< HEAD
-        {
-            name: 'Ranjith Sir',
-            role: 'Faculty Co-Ordinator',
-            image: 'src/assets/images/teams/faculty/ranjith.jpeg',
-            socials: {
-                github: '#',
-                linkedin: '#',
-                instagram: '#'
-            }
-        },
-        
-=======
->>>>>>> 369fb30ee49d61dd288a7d0621eda0b3a4812d0d
         {
             name: 'K V V S S Vardhini',
             role: 'Organizer',
@@ -85,15 +51,15 @@ const teams = {
             }
         },
         {
-        name: 'Akash Rao M.',
-        role: 'Co-Organizer',
-        image: 'src/assets/images/teams/core/akash.jpeg',
-        socials: {
-            github: '#',
-            linkedin: 'https://www.linkedin.com/in/akash-rao-mallareddy',
-            instagram: 'https://www.instagram.com/akash_mallareddy'
-        }
-    },
+            name: 'Akash Rao M.',
+            role: 'Co-Organizer',
+            image: 'src/assets/images/teams/core/akash.jpeg',
+            socials: {
+                github: '#',
+                linkedin: 'https://www.linkedin.com/in/akash-rao-mallareddy',
+                instagram: 'https://www.instagram.com/akash_mallareddy'
+            }
+        },
     ],
     'WEB-DEV TEAM': [
     {
