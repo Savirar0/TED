@@ -1,9 +1,21 @@
 const teams = {
-    'FACULTY CO-OORDINATORS': [
+    
+    'CORE TEAM': [
+
         {
-            name: 'Ranjith Sir',
-            role: 'Faculty Co-Ordinator',
-            image: 'src/assets/images/teams/faculty/ranjith.jpeg',
+            name: 'A. Hriday Reddy',
+            role: 'Vice Chairman',
+            image: '',
+            socials: {
+                github: '#',
+                linkedin: '#',
+                instagram: '#'
+            }
+        },
+        {
+            name: 'Dr. C. Uday Kiran',
+            role: 'Principal',
+            image: '',
             socials: {
                 github: '#',
                 linkedin: '#',
@@ -19,9 +31,18 @@ const teams = {
                 linkedin: '#',
                 instagram: '#'
             }
-        }
-    ],
-    'CORE TEAM': [
+        },
+        {
+            name: 'Ranjith Sir',
+            role: 'Faculty Co-Ordinator',
+            image: 'src/assets/images/teams/faculty/ranjith.jpeg',
+            socials: {
+                github: '#',
+                linkedin: '#',
+                instagram: '#'
+            }
+        },
+        
         {
             name: 'K V V S S Vardhini',
             role: 'Organizer',

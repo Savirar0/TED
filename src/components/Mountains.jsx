@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../styles/mountains.css";
 import SocialIcon from "../utils/SocialIcon";
+//@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,7 +46,9 @@ const Mountains = () => {
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      setCountdown(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+      setCountdown(`${days} : ${hours} : ${minutes} : ${seconds}`);
+      //setCountdown(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+
     };
 
     const interval = setInterval(updateCountdown, 1000);
@@ -159,7 +162,7 @@ const Mountains = () => {
           <image className="cloud1" xlinkHref="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800" />
           <image className="cloud3" xlinkHref="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800" />
 
-          <text fill="#fff" x="150" y="300" fontSize="99" fontFamily="'Montserrat', sans-serif">
+          <text fill="#fff" x="30" y="250" fontSize="99" fontFamily="Orbitron">
             Illuminating The Path
           </text>
 
@@ -167,7 +170,7 @@ const Mountains = () => {
 
           <g mask="url(#m)">
             <rect fill="#fff" width="100%" height="100%" />
-            <text fill="#ff0000" x="600" y="330" fontSize="99" fontFamily="'Montserrat', sans-serif" textAnchor="middle">
+            <text fill="#ff0000" x="600" y="330" fontSize="99" fontFamily="'Doto', sans-serif" textAnchor="middle">
               {countdown}
             </text>
           </g>
