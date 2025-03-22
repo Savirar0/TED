@@ -1,4 +1,5 @@
 const teams = {
+<<<<<<< HEAD
     
     'CORE TEAM': [
 
@@ -16,6 +17,33 @@ const teams = {
             name: 'Dr. C. Uday Kiran',
             role: 'Principal',
             image: '',
+=======
+    'CORE TEAM': [
+        {
+            name: 'Dr. C. Uday Kiran',
+            role: 'Principal',
+            image: 'src/assets/images/teams/core/principal.jpg',
+            socials: {
+                github: '#',
+                linkedin: '#',
+                instagram: '#'
+            }
+        },
+        {
+            name: 'A Hriday Reddy',
+            role: 'Vice Chairman',
+            image: 'src/assets/images/teams/core/vicechair.jpg',
+            socials: {
+                github: '#',
+                linkedin: '#',
+                instagram: '#'
+            }
+        },
+        {
+            name: 'Ranjith Sir',
+            role: 'Faculty Co-Ordinator',
+            image: 'src/assets/images/teams/core/ranjith.jpeg',
+>>>>>>> 369fb30ee49d61dd288a7d0621eda0b3a4812d0d
             socials: {
                 github: '#',
                 linkedin: '#',
@@ -25,13 +53,14 @@ const teams = {
         {
             name: 'Harsha Sir',
             role: 'Faculty Co-Ordinator',
-            image: 'src/assets/images/teams/faculty/harsha.jpeg',
+            image: 'src/assets/images/teams/core/harsha.jpeg',
             socials: {
                 github: '#',
                 linkedin: '#',
                 instagram: '#'
             }
         },
+<<<<<<< HEAD
         {
             name: 'Ranjith Sir',
             role: 'Faculty Co-Ordinator',
@@ -43,6 +72,8 @@ const teams = {
             }
         },
         
+=======
+>>>>>>> 369fb30ee49d61dd288a7d0621eda0b3a4812d0d
         {
             name: 'K V V S S Vardhini',
             role: 'Organizer',
