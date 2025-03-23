@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "../styles/Mountains.css";
+import "/src/styles/Mountains.css";
 import SocialIcon from "../utils/SocialIcon";
 import logo from "../assets/logos/ILLUMINAT.png";
 
