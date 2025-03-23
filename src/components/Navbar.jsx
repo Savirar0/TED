@@ -26,7 +26,6 @@ const Navbar = ({ activeLink }) => {
       
       if (Math.abs(currentScrollY - lastScrollY.current) > 10) {
         setIsVisible(!scrollingDown);
-        // Close mobile menu when scrolling down
         if (scrollingDown && isMobileMenuOpen) {
           setIsMobileMenuOpen(false);
         }

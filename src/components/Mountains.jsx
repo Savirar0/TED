@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../styles/mountains.css";
 import SocialIcon from "../utils/SocialIcon";
+import logo from "../assets/logos/ILLUMINAT.png";
+
 //@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 gsap.registerPlugin(ScrollTrigger);
@@ -162,9 +164,10 @@ const Mountains = () => {
           <image className="cloud1" xlinkHref="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800" />
           <image className="cloud3" xlinkHref="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800" />
 
-          <text fill="#fff" x="30" y="250" fontSize="99" fontFamily="Orbitron">
-            Illuminating The Path
+          <text fill="#2e2e2e" x="50" y="278" fontSize="99" text fontFamily="Orbitron">
+          Illuminating the path
           </text>
+          {/*<image xlinkHref={logo} x="50" y="178" width="600" height="100" />*/}
 
           <polyline className="arrow" fill="#fff" points="599,350 599,389 590,379 590,382 600,392 610,382 610,379 601,389 601,350" />
 
