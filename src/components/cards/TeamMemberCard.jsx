@@ -1,41 +1,104 @@
 import React from "react";
-import SocialIcon from "../../utils/SocialIcon";
 import { motion } from "framer-motion";
-import '../../styles/teamMemberCard.css';
+import { 
+  Github, 
+  Linkedin, 
+  Instagram 
+} from 'lucide-react';
 
-const TeamMemberCard = ({ member }) => (
-  <motion.div
-    className="relative bg-gradient-to-br from-black via-red-900 to-red-800 rounded-xl overflow-hidden
-    transform transition-all duration-500 hover:shadow-2xl team-member-card"
-    whileHover={{
-      scale: 1.03,
-      boxShadow: "0 25px 50px -12px rgba(220, 38, 38, 0.4)"
-    }}
-  >
-    <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-red-400 via-red-600 to-red-800" />
-    <div className="px-6 pt-8 pb-6">
-      <div className="team-image-container mb-6 overflow-hidden">
-        <div className="team-image-spotlight" />
-        <motion.img
-          src={member.image}
-          alt={`${member.name}'s profile picture`}
-          className="team-member-image"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.5 }}
-        />
-      </div>
-      <div className="text-center relative z-10">
-        <h3 className="text-2xl font-extrabold mb-2 tracking-wide text-white">{member.name}</h3>
-        <div className="h-0.5 w-12 bg-red-500 mx-auto mb-3" />
-        <p className="text-gray-200 font-medium mb-4 text-lg">{member.role}</p>
-        <div className="flex justify-center space-x-3 mt-3">
-            {Object.entries(member.socials).map(([platform, url]) => 
-              <SocialIcon key={platform} href={url} type={platform} />
-            )}
+const SocialIcon = ({ href, Icon, color }) => {
+  if (href === '#') return null;
+  
+  return (
+    <motion.a 
+      href={href} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-gray-400 hover:text-white transition-colors duration-300"
+      whileHover={{ 
+        scale: 1.2,
+        color: color
+      }}
+      whileTap={{ scale: 0.9 }}
+    >
+      <Icon size={24} />
+    </motion.a>
+  );
+};
+
+const socialPlatforms = {
+  github: { Icon: Github, color: '#333' },
+  linkedin: { Icon: Linkedin, color: '#0077B5' },
+  instagram: { Icon: Instagram, color: '#E1306C' }
+};
+
+const TeamMemberCard = ({ member }) => {
+  return (
+    <motion.div 
+      className="relative group"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ 
+        duration: 0.6,
+        type: "spring",
+        stiffness: 100 
+      }}
+    >
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-red-600 to-purple-600 
+        rounded-2xl opacity-75 group-hover:opacity-100 transition duration-500 
+        blur-sm group-hover:blur-lg animate-tilt"></div>
+      
+      <div className="relative bg-black rounded-2xl p-6 ring-1 ring-gray-900/5 
+        transform transition-all duration-300 group-hover:scale-[1.02]">
+        <div className="relative">
+          
+          <motion.div 
+            className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-red-600/50"
+            whileHover={{ 
+              scale: 1.1,
+              rotate: 3
+            }}
+            transition={{ duration: 0.3 }}
+          >
+            <img 
+              src={member.image} 
+              alt={`${member.name}`} 
+              className="w-full h-full object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </motion.div>
+
+          
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-white mb-1 tracking-tight">
+              {member.name}
+            </h3>
+            <p className="text-red-400 font-medium mb-4">
+              {member.role}
+            </p>
+
+            
+            <div className="flex justify-center space-x-4 mt-4 h-8">
+              {Object.entries(member.socials)
+                .filter(([_, url]) => url !== '#')
+                .map(([platform, url]) => {
+                  const { Icon, color } = socialPlatforms[platform] || {};
+                  return Icon ? (
+                    <SocialIcon 
+                      key={platform} 
+                      href={url} 
+                      Icon={Icon} 
+                      color={color} 
+                    />
+                  ) : null;
+                })
+              }
+            </div>
           </div>
+        </div>
       </div>
-    </div>
-  </motion.div>
-);
+    </motion.div>
+  );
+};
 
 export default TeamMemberCard;

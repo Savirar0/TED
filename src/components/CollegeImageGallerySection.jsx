@@ -8,63 +8,63 @@ const CollegeImageGallerySection = () => {
   const galleryItems = [
     {
       id: 1,
-      src: "src/assets/images/college_gallery/campus.jpg",
+      src: "../assets/images/college_gallery/campus.jpg",
       alt: "Campus Life",
       caption: "CAMPUS LIFE",
       description: "Experience the vibrant atmosphere of our beautiful campus grounds, where students gather to study, socialize, and enjoy college life."
     },
     {
       id: 2,
-      src: "src/assets/images/college_gallery/auditorium.jpg",
+      src: "../assets/images/college_gallery/auditorium.jpg",
       alt: "Academic Programs",
       caption: "AUDITORIUM",
       description: "Our state-of-the-art auditorium hosts lectures, performances, and special events throughout the academic year."
     },
     {
       id: 3,
-      src: "src/assets/images/college_gallery/sa_2.jpeg",
+      src: "../assets/images/college_gallery/sa_2.jpeg",
       alt: "college image",
       caption: "STUDENT EVENTS",
       description: "Students participate in a variety of cultural and social events that enhance their college experience and build lasting memories."
     },
     {
       id: 4,
-      src: "src/assets/images/college_gallery/library.jpg",
+      src: "../assets/images/college_gallery/library.jpg",
       alt: "Research Opportunities",
       caption: "LIBRARY",
       description: "Our expansive library provides access to thousands of resources, quiet study spaces, and research assistance."
     },
     {
       id: 5,
-      src: "src/assets/images/college_gallery/football_aiml1.jpeg",
+      src: "../assets/images/college_gallery/football_aiml1.jpeg",
       alt: "Athletics",
       caption: "ATHLETICS",
       description: "The athletics program offers competitive sports opportunities and promotes physical fitness and team building skills."
     },
     {
       id: 6,
-      src: "src/assets/images/college_gallery/seminar.jpeg",
+      src: "../assets/images/college_gallery/seminar.jpeg",
       alt: "Global Programs",
       caption: "SEMINARIES",
       description: "Interactive seminars provide students with opportunities to engage with industry experts and expand their knowledge."
     },
     {
       id: 7,
-      src: "src/assets/images/college_gallery/faculty_pp.jpg",
+      src: "../assets/images/college_gallery/faculty_pp.jpg",
       alt: "Faculty image",
       caption: "FACULTY",
       description: "Our distinguished faculty members are leaders in their fields, dedicated to student success and academic excellence."
     },
     {
       id: 8,
-      src: "src/assets/images/college_gallery/pasttedx.jpg",
+      src: "../assets/images/college_gallery/pasttedx.jpg",
       alt: "Student Activities",
       caption: "ACTIVITIES",
       description: "Students get to experience a variety of extracurricular activities that develop leadership skills and foster community."
     },
     {
       id: 9,
-      src: "src/assets/images/college_gallery/student_activites.jpeg",
+      src: "../assets/images/college_gallery/student_activites.jpeg",
       alt: "Innovation",
       caption: "STUDENT ACTIVITIES",
       description: "Engaging student activities create a dynamic campus atmosphere and provide opportunities for personal growth."

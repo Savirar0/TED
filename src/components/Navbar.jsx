@@ -73,7 +73,7 @@ const Navbar = ({ activeLink }) => {
           <button 
             type="button" 
             className="absolute right-4 text-red-600 hover:text-white border border-red-600 hover:bg-red-700 focus:ring-2 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-xs md:text-sm px-3 py-1.5 md:px-5 md:py-2.5 text-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900" 
-            onClick={handleBookClick}
+            // onClick={handleBookClick}
           >
             <span className="hidden md:inline">Get your Passes</span>
             <span className="md:hidden">Get Passes</span>

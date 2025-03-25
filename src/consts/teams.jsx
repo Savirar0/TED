@@ -21,7 +21,7 @@ const teams = {
             }
         },
         {
-            name: 'Ranjith Sir',
+            name: 'Dr. Anand Ranjith',
             role: 'Faculty Co-Ordinator',
             image: 'src/assets/images/teams/core/ranjit.png',
             socials: {
@@ -31,7 +31,7 @@ const teams = {
             }
         },
         {
-            name: 'Harsha Sir',
+            name: 'Dr. P. Sree Harsha',
             role: 'Faculty Co-Ordinator',
             image: 'src/assets/images/teams/core/harsha.jpeg',
             socials: {
@@ -63,18 +63,8 @@ const teams = {
     ],
     'WEB-DEV TEAM': [
     {
-        name: 'P. Navadeep',
-        role: 'Lead',
-        image: 'src/assets/images/teams/webdev/navadeep.png',
-        socials: {
-            github: '#',
-            linkedin: 'https://www.linkedin.com/in/peddamalla-navadeep-abaa01212',
-            instagram: 'https://www.instagram.com/navadeep_2077'
-        }
-    },
-    {
         name: 'Esvin Joshua',
-        role: 'Co-Lead',
+        role: 'Lead',
         image: 'src/assets/images/teams/webdev/joshua.jpeg',
         socials: {
             github: 'https://www.github.com/wakandawebweaver',
@@ -83,8 +73,18 @@ const teams = {
         }
     },
     {
+        name: 'P. Navadeep',
+        role: 'Co-Lead',
+        image: 'src/assets/images/teams/webdev/navadeep.png',
+        socials: {
+            github: '#',
+            linkedin: 'https://www.linkedin.com/in/peddamalla-navadeep-abaa01212',
+            instagram: 'https://www.instagram.com/navadeep_2077'
+        }
+    },
+    {
         name: 'Srinivas Yejarla',
-        role: 'Design',
+        role: 'Member',
         image: 'src/assets/images/teams/webdev/Srinivas.png',
         socials: {
             github: '#',
@@ -94,7 +94,7 @@ const teams = {
     },
     {
         name: 'Syeda Reshmi',
-        role: 'Design',
+        role: 'Member',
         image: 'src/assets/images/teams/webdev/Reshmi.png',
         socials: {
             github: '#',
@@ -116,7 +116,7 @@ const teams = {
         },
         {
             name: 'M. Sri Varun',
-            role: 'Co-Lead',
+            role: 'Lead',
             image: 'src/assets/images/teams/hospitality/srivarun.jpeg',
             socials: {
                 github: '#',
@@ -188,7 +188,7 @@ const teams = {
         },
         {
             name: 'J. Sri Lakshmi',
-            role: 'Co-Lead',
+            role: 'Lead',
             image: 'src/assets/images/teams/marketing/srilakshmi.jpeg',
             socials: {
                 github: '#',
@@ -240,7 +240,7 @@ const teams = {
       },
       {
         name: 'M. Sudarshan',
-        role: 'Co-Lead',
+        role: 'Lead',
         image: 'src/assets/images/teams/production/sudarshan.png',
         socials: {
             github: '#',
@@ -282,7 +282,7 @@ const teams = {
       },
       {
         name: 'P. Sri Harshini',
-        role: 'Co-Lead',
+        role: 'Lead',
         image: 'src/assets/images/teams/sponsorship/harshini.jpeg',
         socials: {
             github: '#',

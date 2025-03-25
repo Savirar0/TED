@@ -1,109 +1,23 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import TeamMemberCard from '../components/cards/TeamMemberCard';
 import teams from '../consts/teams';
 import Navbar from '../components/Navbar';
 
-const TeamHeader = ({ title }) => {
-  return (
-    <div className="relative my-16">
-      <div className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-600 to-transparent top-1/2 -z-0"></div>
-      <motion.h1
-        className="text-6xl md:text-7xl font-extrabold text-center relative z-10 tracking-tight inline-block bg-black px-6"
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-800">{title}</span>
-      </motion.h1>
-    </div>
-  );
-};
-
-const TeamGrid = () => {
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      const { clientX, clientY } = e;
-      
-      document.querySelectorAll('.team-image-container').forEach(card => {
-        const cardRect = card.getBoundingClientRect();
-        const cardCenterX = cardRect.left + cardRect.width / 2;
-        const cardCenterY = cardRect.top + cardRect.height / 2;
-        const distanceX = (clientX - cardCenterX) / 25;
-        const distanceY = (clientY - cardCenterY) / 25;
-        
-        if (card.matches(':hover')) {
-          card.style.transform = `perspective(1000px) rotateX(${-distanceY}deg) rotateY(${distanceX}deg) scale3d(1.05, 1.05, 1.05)`;
-        } else {
-          card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
-        }
-      });
-    };
-    
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
-  return (
-    <div className="space-y-24" ref={containerRef}>
-      {Object.entries(teams).map(([teamName, members], index) => (
-        <motion.div
-          key={teamName}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: index * 0.1 }}
-          className="space-y-12"
-        >
-          <TeamHeader title={teamName} />
-          <motion.div
-            className="flex flex-wrap justify-center gap-8"
-            initial="hidden"
-            animate="visible"
-            variants={{
-              hidden: { opacity: 0 },
-              visible: {
-                opacity: 1,
-                transition: { 
-                  duration: 1
-                 },
-              },
-            }}
-          >
-            {members.map((member, idx) => (
-              <motion.div
-                key={idx}
-                className="w-full sm:w-80 md:w-80 lg:w-80 xl:w-72"
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0 },
-                }}
-                transition={{
-                  duration: 0.4,
-                  type: "spring",
-                  stiffness: 70
-                }}
-              >
-                <TeamMemberCard member={member} />
-              </motion.div>
-            ))}
-          </motion.div>
-        </motion.div>
-      ))}
-    </div>
-  );
-};
-
 const TeamPage = () => {
+  const [activeTab, setActiveTab] = useState('CORE TEAM');
+  const teamRoles = Object.keys(teams);
+
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white pt-24">
       <Navbar activeLink="team" />
       <main className="relative">
+        
         <div className="absolute top-0 right-0 w-1/2 h-screen bg-gradient-to-bl from-red-900/10 to-transparent opacity-30 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-2/5 h-2/3 bg-gradient-to-tr from-red-700/5 to-transparent opacity-20 pointer-events-none" />
-        <div className="h-24" />
+        
         <div className="container mx-auto px-6 py-16 max-w-7xl relative z-10">
+          
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -119,7 +33,38 @@ const TeamPage = () => {
               creativity, and a passion for transformative experiences.
             </p>
           </motion.div>
-          <TeamGrid />
+
+          
+          <div className="flex justify-center mb-12 space-x-4 flex-wrap gap-4">
+            {teamRoles.map((role) => (
+              <button
+                key={role}
+                onClick={() => setActiveTab(role)}
+                className={`
+                  px-6 py-3 rounded-full transition-all duration-300 
+                  ${activeTab === role 
+                    ? 'bg-red-600 text-white' 
+                    : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+                  }
+                `}
+              >
+                {role}
+              </button>
+            ))}
+          </div>
+
+          
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+          >
+            {teams[activeTab].map((member, idx) => (
+              <TeamMemberCard key={idx} member={member} />
+            ))}
+          </motion.div>
         </div>
       </main>
     </div>

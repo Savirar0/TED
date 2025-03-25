@@ -2,7 +2,7 @@ import React from "react";
 import Mountains from "../components/Mountains.jsx";
 import { WhatTEDx } from "../components/WhatTEDx";
 import CollegeImageGallerySection from "../components/CollegeImageGallerySection.jsx";
-import OurSponsors from "../components/OurSponsors.jsx";
+// import OurSponsors from "../components/OurSponsors.jsx";
 
 const Homepage = () => {
     return (
@@ -10,7 +10,7 @@ const Homepage = () => {
         <Mountains />
         <WhatTEDx />
         <CollegeImageGallerySection />
-        {/*<OurSponsors />*/}
+        {/* <OurSponsors /> */}
       </div>
     );
 };

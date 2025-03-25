@@ -121,25 +121,20 @@ const Mountains = () => {
           <image className="cloud3" xlinkHref="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800" />
 
           {/* Roses text with Tailwind CSS styling */}
-          <foreignObject x="0" y="-100" width="1200" height="400">
+          <foreignObject x="0" y="-100" width="1200" height="500">
             <div 
               xmlns="http://www.w3.org/1999/xhtml" 
-              className="text-[7rem] text-center h-[90vh] leading-[90vh] text-[#fcedd8] font-bold"
+              className="text-[5rem] text-center h-[90vh] leading-[90vh] text-[#fcedd8] font-bold mb-36"
               style={{
-                fontFamily: "'Bebas Neue', sans-serif",
+                fontFamily: "'Playfair Display', serif",
                 textShadow: `
                   5px 5px 0px rgb(0, 0, 0),
-                  5px 5px 0px rgb(0, 0, 0),
                   10px 10px 0px rgb(255, 255, 255),
-                  10px 10px 0px rgb(255, 0, 0),
                   10px 10px 0px #3a81b9,
-                  10px 10px 0px #3a81b9,
-                  10px 10px 0px #3a81b9,
-                  10px 10px 0px #3a81b9
                 `
               }}
             >
-              ILLUMINATING THE PATH
+              ILLUMINATING THE <span style={{ textDecoration: 'underline' }}>PATH</span>
             </div>
           </foreignObject>
 
