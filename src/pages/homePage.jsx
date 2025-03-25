@@ -10,7 +10,7 @@ const Homepage = () => {
         <Mountains />
         <WhatTEDx />
         <CollegeImageGallerySection />
-        <OurSponsors />
+        {/*<OurSponsors />*/}
       </div>
     );
 };
