@@ -1,0 +1,4 @@
+deployment:
+  branch: main  
+  commands:
+    - echo "Deploying to cPanel"
