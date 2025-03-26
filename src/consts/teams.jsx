@@ -1,9 +1,9 @@
 const teams = {
     'CORE TEAM': [
         {
-            name: 'Dr. C. Udaya Kiran',
-            role: 'Principal',
-            image: 'src/assets/images/teams/core/principal.jpg',
+            name: 'A. Hriday Reddy',
+            role: 'Vice Chairman',
+            image: 'src/assets/images/teams/core/vicechair.jpg',
             socials: {
                 github: '#',
                 linkedin: '#',
@@ -11,9 +11,9 @@ const teams = {
             }
         },
         {
-            name: 'A. Hriday Reddy',
-            role: 'Vice Chairman',
-            image: 'src/assets/images/teams/core/vicechair.jpg',
+            name: 'Dr. C. Udaya Kiran',
+            role: 'Principal',
+            image: 'src/assets/images/teams/core/principal.jpg',
             socials: {
                 github: '#',
                 linkedin: '#',
@@ -43,7 +43,7 @@ const teams = {
         {
             name: 'K V V S S Vardhini',
             role: 'Organizer',
-            image: 'src/assets/images/teams/core/vardhini.jpeg',
+            image: 'src/assets/images/teams/core/vardhini.png',
             socials: {
                 github: '#',
                 linkedin: 'https://www.linkedin.com/in/vardhini-konijeti-33a211291',
@@ -62,36 +62,36 @@ const teams = {
         },
     ],
     'WEB-DEV TEAM': [
-    {
-        name: 'Esvin Joshua',
-        role: 'Lead',
-        image: 'src/assets/images/teams/webdev/joshua.jpeg',
-        socials: {
-            github: 'https://www.github.com/wakandawebweaver',
-            linkedin: 'https://www.linkedin.com/in/esvin-joshua/',
-            instagram: 'https://www.instagram.com/esvinjoshua/'
-        }
-    },
-    {
-        name: 'P. Navadeep',
-        role: 'Co-Lead',
-        image: 'src/assets/images/teams/webdev/navadeep.png',
-        socials: {
-            github: '#',
-            linkedin: 'https://www.linkedin.com/in/peddamalla-navadeep-abaa01212',
-            instagram: 'https://www.instagram.com/navadeep_2077'
-        }
-    },
-    {
-        name: 'Srinivas Yejarla',
-        role: 'Member',
-        image: 'src/assets/images/teams/webdev/Srinivas.png',
-        socials: {
-            github: '#',
-            linkedin: 'https://www.linkedin.com/in/srinu-yejarla-46a21a291',
-            instagram: 'https://www.instagram.com/srinu_yejarla'
-        }
-    },
+        {
+            name: 'P. Navadeep',
+            role: 'Lead',
+            image: 'src/assets/images/teams/webdev/navadeep.png',
+            socials: {
+                github: '#',
+                linkedin: 'https://www.linkedin.com/in/peddamalla-navadeep-abaa01212',
+                instagram: 'https://www.instagram.com/navadeep_2077'
+            }
+        },
+        {
+            name: 'Srinivas Yejarla',
+            role: 'Member',
+            image: 'src/assets/images/teams/webdev/Srinivas.png',
+            socials: {
+                github: '#',
+                linkedin: 'https://www.linkedin.com/in/srinu-yejarla-46a21a291',
+                instagram: 'https://www.instagram.com/srinu_yejarla'
+            }
+        },
+        {
+            name: 'Esvin Joshua',
+            role: 'Member',
+            image: 'src/assets/images/teams/webdev/joshua.jpeg',
+            socials: {
+                github: 'https://www.github.com/wakandawebweaver',
+                linkedin: 'https://www.linkedin.com/in/esvin-joshua/',
+                instagram: 'https://www.instagram.com/esvinjoshua/'
+            }
+        },
     {
         name: 'Syeda Reshmi',
         role: 'Member',
@@ -116,8 +116,8 @@ const teams = {
         },
         {
             name: 'M. Sri Varun',
-            role: 'Lead',
-            image: 'src/assets/images/teams/hospitality/srivarun.jpeg',
+            role: 'Co-Lead',
+            image: 'src/assets/images/teams/hospitality/srivarun.png',
             socials: {
                 github: '#',
                 linkedin: 'https://www.linkedin.com/in/manthena-srivarun-7b7a83290',
@@ -127,7 +127,7 @@ const teams = {
         {
             name: 'P. Manugnya',
             role: 'Member',
-            image: 'src/assets/images/teams/hospitality/manugnya.jpeg',
+            image: 'src/assets/images/teams/hospitality/manugnya.png',
             socials: {
                 github: '#',
                 linkedin: 'https://www.linkedin.com/in/chaitra-bonagiri-404b61290',
@@ -135,7 +135,7 @@ const teams = {
             }
         },
         {
-            name: 'U SHASHI KUMAR',
+            name: 'U Shashi Kumar',
             role: 'Member',
             image: 'src/assets/images/teams/hospitality/shashi.png',
             socials: {
@@ -179,7 +179,7 @@ const teams = {
         {
             name: 'J. Aum Aditya',
             role: 'Lead',
-            image: 'src/assets/images/teams/marketing/aumaditya.jpeg',
+            image: 'src/assets/images/teams/marketing/aumaditya.jpg',
             socials: {
                 github: '#',
                 linkedin: '#',
@@ -188,7 +188,7 @@ const teams = {
         },
         {
             name: 'J. Sri Lakshmi',
-            role: 'Lead',
+            role: 'Co-Lead',
             image: 'src/assets/images/teams/marketing/srilakshmi.jpeg',
             socials: {
                 github: '#',
@@ -219,7 +219,7 @@ const teams = {
         {
           name: 'G. Srinitha',
           role: 'Member',
-            image: 'src/assets/images/teams/marketing/srinitha.png',
+            image: 'src/assets/images/teams/marketing/srinitha.jpg',
           socials: {
               github: '#',
               linkedin: 'https://www.linkedin.com/in/srinitha-g-944259330',
@@ -240,7 +240,7 @@ const teams = {
       },
       {
         name: 'M. Sudarshan',
-        role: 'Lead',
+        role: 'Co-Lead',
         image: 'src/assets/images/teams/production/sudarshan.png',
         socials: {
             github: '#',
@@ -282,7 +282,7 @@ const teams = {
       },
       {
         name: 'P. Sri Harshini',
-        role: 'Lead',
+        role: 'Co-Lead',
         image: 'src/assets/images/teams/sponsorship/harshini.jpeg',
         socials: {
             github: '#',

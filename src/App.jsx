@@ -4,8 +4,6 @@ import Navbar from "./components/Navbar";
 import Homepage from './pages/homePage';
 import Footer from "./components/Footer";
 import TeamPage from './pages/teamPage';
-// import SpeakersPage from './pages/speakersPage';
-// import SchedulePage from './pages/schedulePage';
 import TBDPage from './pages/TBDPage';
 import { motion } from "framer-motion";
 
@@ -26,7 +24,7 @@ const App = () => {
         <div className="fixed top-0 left-0 w-full h-screen bg-gradient-to-b from-red-700 to-black flex items-center justify-center overflow-hidden">
           <svg
             className="absolute w-full h-full z-10"
-            viewBox="0 0 100 20"
+            viewBox="0 0 50 20"
             preserveAspectRatio="none"
           >
             <motion.path

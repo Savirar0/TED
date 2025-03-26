@@ -11,7 +11,8 @@ export const TieredSponsors = () => {
 
   const sponsorsByTier = {
     platinum: [
-      { id: 1, name: 'Platinum Sponsor', logo: '/api/placeholder/300/150', website: 'https://platinum.example.com', description: 'Our exclusive platinum sponsor has provided exceptional support for this event and has been a cornerstone partner in our success.' }
+      { id: 1, name: 'Rotaract', logo: 'src/assets/logos/spons/outreach/rot.png', website: 'https://rche3150.org',
+         description: 'Rotaract Club Hyderabad East' }
     ],
     gold: [
       { id: 2, name: 'Gold Sponsor 1', logo: '/api/placeholder/220/120', website: 'https://gold1.example.com' },
@@ -85,7 +86,7 @@ export const TieredSponsors = () => {
 
   const renderTierSection = (tier, sponsors, tierColor) => {
     const tierName = tier.charAt(0).toUpperCase() + tier.slice(1);
-    const isPlatinum = tier === 'platinum';
+    const isPlatinum = tier === 'outreach';
     
     return (
       <div className={`mb-24 ${isPlatinum ? 'pt-4' : ''}`}>
@@ -113,7 +114,7 @@ export const TieredSponsors = () => {
                     <img 
                       src={sponsor.logo} 
                       alt={`${sponsor.name} logo`} 
-                      className="max-w-full h-auto opacity-90 hover:opacity-100 transition-opacity" 
+                      className="max-w-full w-24 h-24 h-auto opacity-90 hover:opacity-100 transition-opacity" 
                     />
                   </div>
                   <div className="text-center md:text-left">
@@ -169,13 +170,13 @@ export const TieredSponsors = () => {
           </p>
         </motion.div>
 
-        {renderTierSection('platinum', sponsorsByTier.platinum, 'text-gray-300')}
+        {renderTierSection('outreach', sponsorsByTier.platinum, 'text-gray-300')}
         
-        {renderTierSection('gold', sponsorsByTier.gold, 'text-yellow-500')}
+        {/* {renderTierSection('gold', sponsorsByTier.gold, 'text-yellow-500')}
         
-        {renderTierSection('silver', sponsorsByTier.silver, 'text-gray-400')}
+        {renderTierSection('silver', sponsorsByTier.silver, 'text-gray-400')} */}
         
-        <div className="mt-16 pt-12 border-t border-gray-800">
+        {/* <div className="mt-16 pt-12 border-t border-gray-800">
           <div className="text-center mb-12">
             <h3 className="text-2xl font-bold mb-2">We Also Thank</h3>
             <div className="h-0.5 w-16 bg-gray-600 mx-auto mb-8" />
@@ -211,7 +212,7 @@ export const TieredSponsors = () => {
               ))}
             </motion.div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <AnimatePresence>
