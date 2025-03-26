@@ -1,4 +1,7 @@
 deployment:
   branch: main  
   commands:
-    - echo "Deploying to cPanel"
+    - echo "Starting deployment to cPanel"
+    - npm install  
+    - npm run build  
+    - echo "Deployment completed successfully"
