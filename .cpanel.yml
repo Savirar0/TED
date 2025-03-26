@@ -1,7 +1,7 @@
+---
 deployment:
-  branch: main  
-  commands:
-    - echo "Starting deployment to cPanel"
+  tasks:
+    - export DEPLOYPATH=/home/user/public_html/  
     - npm install  
-    - npm run build  
-    - echo "Deployment completed successfully"
+    - npm run build 
+    - /bin/cp -r build/* $DEPLOYPATH  
