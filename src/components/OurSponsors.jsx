@@ -91,7 +91,7 @@ export const TieredSponsors = () => {
     return (
       <div className={`mb-24 ${isPlatinum ? 'pt-4' : ''}`}>
         <div className="text-center mb-12">
-          <h3 className={`text-4xl font-bold mb-2 ${tierColor}`}>{tierName} Sponsors</h3>
+          <h3 className={`text-4xl font-bold mb-2 ${tierColor}`}>Community Outreach Partners</h3>
           <div className={`h-1 w-20 ${tierColor.replace('text-', 'bg-')} mx-auto mb-8`} />
         </div>
         
@@ -162,7 +162,7 @@ export const TieredSponsors = () => {
           className="text-center mb-16"
         >
           <h2 className="text-6xl md:text-7xl font-black mb-6 tracking-tighter">
-            Our <span className="text-red-600">Sponsors</span>
+            Our <span className="text-red-600">Partners</span>
           </h2>
           <div className="h-1 w-24 bg-red-600 mx-auto mb-10" />
           <p className="text-xl max-w-4xl mx-auto text-gray-300 leading-relaxed">

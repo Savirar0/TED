@@ -239,7 +239,7 @@ const MountainSection = () => {
           <h1
             className="text-[clamp(3rem,10vw,5.5rem)] mt-4 font-light italic font-['Playfair_Display'] tracking-wider"
           >
-            Illuminating The <span ref={pathWordRef} className="path-word text-red-500">Path</span>
+            <span ref={pathWordRef} className="path-word text-red-500">Illuminating</span> The Path
           </h1>
           
         

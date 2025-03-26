@@ -3,6 +3,7 @@ import React from "react";
 import WhatTEDx from "../components/WhatTEDx";
 import CollegeImageGallerySection from "../components/CollegeImageGallerySection";
 import MountainSection from "../components/Mountains";
+import TieredSponsors from "../components/OurSponsors";
 
 const Homepage = () => {
     return (
@@ -11,6 +12,7 @@ const Homepage = () => {
         <MountainSection />
         <WhatTEDx />
         <CollegeImageGallerySection />
+        <TieredSponsors />
       </div>
     );
 };
