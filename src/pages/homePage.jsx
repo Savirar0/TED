@@ -1,17 +1,14 @@
 import React from "react";
-import IntroVideoLaunch from "./IntroVideoLaunch.jsx";
-import video from '../assets/videos/intro.mp4'
+{/*import TEDxLanding from "../components/TEDxLanding";*/}
+import WhatTEDx from "../components/WhatTEDx";
+import CollegeImageGallerySection from "../components/CollegeImageGallerySection";
 
 const Homepage = () => {
     return (
       <div className="h-full bg-black">
-        {/* <TEDxLanding />
+        {/*<TEDxLanding />*/}
         <WhatTEDx />
-        <CollegeImageGallerySection /> */}
-        <IntroVideoLaunch
-        websiteUrl="https://www.tedxsreyasinstitute.in"
-        videoSrc={video}
-         />
+        <CollegeImageGallerySection />
       </div>
     );
 };

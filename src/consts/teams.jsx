@@ -5,9 +5,6 @@ const teams = {
             role: 'Vice Chairman',
             image: 'src/assets/images/teams/core/vicechair.jpg',
             socials: {
-                github: '#',
-                linkedin: '#',
-                instagram: '#'
             }
         },
         {
@@ -15,19 +12,14 @@ const teams = {
             role: 'Principal',
             image: 'src/assets/images/teams/core/principal.jpg',
             socials: {
-                github: '#',
-                linkedin: '#',
-                instagram: '#'
             }
+            
         },
         {
             name: 'Dr. Anand Ranjith',
             role: 'Faculty Co-Ordinator',
             image: 'src/assets/images/teams/core/ranjit.png',
             socials: {
-                github: '#',
-                linkedin: '#',
-                instagram: '#'
             }
         },
         {
@@ -35,17 +27,14 @@ const teams = {
             role: 'Faculty Co-Ordinator',
             image: 'src/assets/images/teams/core/harsha.jpeg',
             socials: {
-                github: '#',
-                linkedin: '#',
-                instagram: '#'
             }
+            
         },
         {
             name: 'K V V S S Vardhini',
             role: 'Organizer',
             image: 'src/assets/images/teams/core/vardhini.png',
             socials: {
-                github: '#',
                 linkedin: 'https://www.linkedin.com/in/vardhini-konijeti-33a211291',
                 instagram: 'https://www.instagram.com/iam_kvvvarddhini'
             }
@@ -55,7 +44,6 @@ const teams = {
             role: 'Co-Organizer',
             image: 'src/assets/images/teams/core/akash.jpeg',
             socials: {
-                github: '#',
                 linkedin: 'https://www.linkedin.com/in/akash-rao-mallareddy',
                 instagram: 'https://www.instagram.com/akash_mallareddy'
             }
@@ -67,9 +55,19 @@ const teams = {
             role: 'Lead',
             image: 'src/assets/images/teams/webdev/navadeep.png',
             socials: {
-                github: '#',
+                github: 'https://github.com/Savirar0',
                 linkedin: 'https://www.linkedin.com/in/peddamalla-navadeep-abaa01212',
                 instagram: 'https://www.instagram.com/navadeep_2077'
+            }
+        },
+        {
+            name: 'Esvin Joshua',
+            role: 'Co-Lead',
+            image: 'src/assets/images/teams/webdev/joshua.jpeg',
+            socials: {
+                github: 'https://www.github.com/wakandawebweaver',
+                linkedin: 'https://www.linkedin.com/in/esvin-joshua/',
+                instagram: 'https://www.instagram.com/esvinjoshua/'
             }
         },
         {
@@ -82,16 +80,7 @@ const teams = {
                 instagram: 'https://www.instagram.com/srinu_yejarla'
             }
         },
-        {
-            name: 'Esvin Joshua',
-            role: 'Member',
-            image: 'src/assets/images/teams/webdev/joshua.jpeg',
-            socials: {
-                github: 'https://www.github.com/wakandawebweaver',
-                linkedin: 'https://www.linkedin.com/in/esvin-joshua/',
-                instagram: 'https://www.instagram.com/esvinjoshua/'
-            }
-        },
+        
     {
         name: 'Syeda Reshmi',
         role: 'Member',
@@ -189,7 +178,7 @@ const teams = {
         {
             name: 'J. Sri Lakshmi',
             role: 'Co-Lead',
-            image: 'src/assets/images/teams/marketing/srilakshmi.jpeg',
+            image: 'src/assets/images/teams/marketing/srilakshmi.jpg',
             socials: {
                 github: '#',
                 linkedin: 'https://www.linkedin.com/in/jhade-sri-lakshmi-531212291',
@@ -283,7 +272,7 @@ const teams = {
       {
         name: 'P. Sri Harshini',
         role: 'Co-Lead',
-        image: 'src/assets/images/teams/sponsorship/harshini.jpeg',
+        image: 'src/assets/images/teams/sponsorship/harshini.jpg',
         socials: {
             github: '#',
             linkedin: 'https://www.linkedin.com/in/harshini-netha-15b252291',
