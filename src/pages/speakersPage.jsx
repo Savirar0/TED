@@ -4,7 +4,7 @@ import NavigationBar from '../components/Navbar';
 import SpeakerCard from '../components/cards/SpeakerCard.jsx';
 import speakers from '../consts/speakers.jsx';
 
-const SpeakersPage = () => {
+const SpeakersPage = () => { 
   return (
     <div className="min-h-screen bg-black text-white">
       <NavigationBar activeLink="speakers" />
@@ -42,3 +42,7 @@ const SpeakersPage = () => {
 };
 
 export default SpeakersPage;
+
+
+
+

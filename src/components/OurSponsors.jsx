@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useAnimation } from 'framer-motion';
-import Rotoract from '../assets/logos/spons/outreach/rot.png';
+import Rotoract from '../assets/logos/spons/outreach/rache3.png';
 
 export const TieredSponsors = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -12,7 +12,7 @@ export const TieredSponsors = () => {
 
   const sponsorsByTier = {
     platinum: [
-      { id: 1, name: 'Rotaract', logo: { src: Rotoract }, website: 'https://rche3150.org', description: 'Rotaract Club Hyderabad East' }
+      { id: 1, name: 'Rotaract', logo: { src: Rotoract }, website: 'https://rotaractclubofhyderabadeast.blogspot.com', description: 'Rotaract Club Hyderabad East' }
 
     ],
     gold: [
@@ -113,9 +113,9 @@ export const TieredSponsors = () => {
                 <div className="flex flex-col md:flex-row items-center gap-8 py-6">
                   <div className="flex-shrink-0 p-4 bg-black/40 rounded-lg border border-yellow-500/30">
                     <img 
-                      src={sponsor.logo} 
+                      src={Rotoract} 
                       alt={`${sponsor.name} logo`} 
-                      className="max-w-full w-24 h-24 h-auto opacity-90 hover:opacity-100 transition-opacity" 
+                      className="max-w-full w-24 h-24 object-contain opacity-90 hover:opacity-100 transition-opacity" 
                     />
                   </div>
                   <div className="text-center md:text-left">

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import logo from "../assets/logos/newlogo.png";
 import { Link } from "react-router-dom";
 
+
 const Navbar = ({ activeLink }) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -70,14 +71,14 @@ const Navbar = ({ activeLink }) => {
             </svg>
           </button>
           
-          <button 
+          {/*<button 
             type="button" 
             className="absolute right-4 text-red-600 hover:text-white border border-red-600 hover:bg-red-700 focus:ring-2 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-xs md:text-sm px-3 py-1.5 md:px-5 md:py-2.5 text-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900" 
             // onClick={handleBookClick}
           >
             <span className="hidden md:inline">Get your Passes</span>
             <span className="md:hidden">Get Passes</span>
-          </button>
+          </button>*/}
         </div>
       </nav>
       
@@ -93,6 +94,7 @@ const Navbar = ({ activeLink }) => {
           <NavLink href='/speakers' label="Speakers" active={activeLink === 'speakers'} mobile={true} />
           <NavLink href="/schedule" label="Schedule" active={activeLink === 'schedule'} mobile={true} />
           <NavLink href='/team' label="Team" active={activeLink === 'team'} mobile={true} />
+          <NavLink href='/bookings' label="Bookings" active={activeLink === 'bookings'} mobile={true} />
         </div>
       </motion.div>
       
@@ -108,6 +110,7 @@ const Navbar = ({ activeLink }) => {
           <NavLink href='/speakers' label="Speakers" active={activeLink === 'speakers'} />
           <NavLink href="/schedule" label="Schedule" active={activeLink === 'schedule'} />
           <NavLink href='/team' label="Team" active={activeLink === 'team'} />
+          <NavLink href='/bookings' label="Bookings" active={activeLink === 'bookings'} />
         </div>
       </motion.div>
     </header>

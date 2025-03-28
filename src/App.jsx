@@ -4,8 +4,11 @@ import Navbar from "./components/Navbar";
 import Homepage from './pages/homePage';
 import Footer from "./components/Footer";
 import TeamPage from './pages/teamPage';
-import TBDPage from './pages/TBDPage';
+import SpeakersTWD from './pages/SpeakersTWD';
 import { motion } from "framer-motion";
+import TBDPage from './pages/TBDPage';
+import ScheduleTWD from './pages/ScheduleTWD';
+import BookingsPage from './pages/bookingsPage';
 
 const App = () => {
   const location = useLocation();
@@ -65,9 +68,13 @@ const App = () => {
        <div className="h-full bg-gray-50">
          <Routes>
            <Route path="/" element={<Homepage />} />
+           <Route path="/speakers" element={<SpeakersTWD />} />
+           <Route path="/schedule" element={<ScheduleTWD />} />
            <Route path="/team" element={<TeamPage />} />
-           <Route path="/schedule" element={<TBDPage />} />
-           <Route path="/speakers" element={<TBDPage />} />
+           <Route path="/bookings" element={<BookingsPage />} />
+
+           
+           
          </Routes>
        </div>
        <Footer />

@@ -1,10 +1,11 @@
 import React from 'react';
 import NavigationBar from '../components/Navbar';
 
-const BookingsPage = () => {
-    return (
-        <div className="min-h-screen bg-black text-white">
-        <NavigationBar activeLink="bookings" />
+
+const SpeakersTWD = () => {
+  return (
+    <div className="min-h-screen bg-black text-white">
+        <NavigationBar activeLink="speakers" />
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex flex-col items-center justify-center p-4 mt-24 text-white">
       
       <div className="w-full max-w-4xl mx-auto">
@@ -33,27 +34,26 @@ const BookingsPage = () => {
         
       
         <div className="text-center mb-16">
-          <h6 className="text-4xl font-light mb-8 leading-tight">
-            
-Get ready to experience TEDx at its finest! Ticket bookings for our upcoming event will be revealed soon. Stay tuned for updates and be among the first to secure your spot for an inspiring day of ideas, innovation, and conversations that matter. <span className="text-red-600 font-bold">Stay tuned.</span>
-          </h6>
+          <h2 className="text-4xl font-light mb-8 leading-tight">
+            All Shall Be <span className="text-red-600 font-bold">Revealed</span>...
+          </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Follow us for announcements and be prepared to book your tickets before they sell out!
+            A confluence of ideas, innovation, and inspiration awaits. 
+            Where minds connect and perspectives transform.
           </p>
           <p className="text-2xl font-semibold mt-10 text-red-600">
-            TEDx Sreyas Institute Team
+            Stay Tuned!
           </p>
         </div>
         
       
         
-        
       
         
       </div>
     </div>
-    </div>    
-    )
-}
+    </div>
+  );
+};
 
-export default BookingsPage;
+export default SpeakersTWD;
