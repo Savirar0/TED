@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useAnimation } from 'framer-motion';
+import Rotoract from '../assets/logos/spons/outreach/rot.png';
 
 export const TieredSponsors = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -11,8 +12,8 @@ export const TieredSponsors = () => {
 
   const sponsorsByTier = {
     platinum: [
-      { id: 1, name: 'Rotaract', logo: 'src/assets/logos/spons/outreach/rot.png', website: 'https://rche3150.org',
-         description: 'Rotaract Club Hyderabad East' }
+      { id: 1, name: 'Rotaract', logo: { src: Rotoract }, website: 'https://rche3150.org', description: 'Rotaract Club Hyderabad East' }
+
     ],
     gold: [
       { id: 2, name: 'Gold Sponsor 1', logo: '/api/placeholder/220/120', website: 'https://gold1.example.com' },

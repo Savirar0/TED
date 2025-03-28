@@ -1,5 +1,17 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import campus from '../assets/images/college_gallery/campus.jpg';
+import auditorium from '../assets/images/college_gallery/auditorium.jpg';
+import sa_2 from '../assets/images/college_gallery/sa_2.jpeg';
+import library from '../assets/images/college_gallery/library.jpg';
+import football from '../assets/images/college_gallery/football_aiml1.jpeg';
+import seminar from '../assets/images/college_gallery/seminar.jpeg';
+import faculty from '../assets/images/college_gallery/faculty_pp.jpg';
+import pasttedx from '../assets/images/college_gallery/pasttedx.jpg';
+import stuac from '../assets/images/college_gallery/student_activites.jpeg';
+
+
+
 
 const CollegeImageGallerySection = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -8,63 +20,63 @@ const CollegeImageGallerySection = () => {
   const galleryItems = [
     {
       id: 1,
-      src: "../assets/images/college_gallery/campus.jpg",
+      src: campus,
       alt: "Campus Life",
       caption: "CAMPUS LIFE",
       description: "Experience the vibrant atmosphere of our beautiful campus grounds, where students gather to study, socialize, and enjoy college life."
     },
     {
       id: 2,
-      src: "../assets/images/college_gallery/auditorium.jpg",
+      src: auditorium,
       alt: "Academic Programs",
       caption: "AUDITORIUM",
       description: "Our state-of-the-art auditorium hosts lectures, performances, and special events throughout the academic year."
     },
     {
       id: 3,
-      src: "../assets/images/college_gallery/sa_2.jpeg",
+      src: sa_2,
       alt: "college image",
       caption: "STUDENT EVENTS",
       description: "Students participate in a variety of cultural and social events that enhance their college experience and build lasting memories."
     },
     {
       id: 4,
-      src: "../assets/images/college_gallery/library.jpg",
+      src: library,
       alt: "Research Opportunities",
       caption: "LIBRARY",
       description: "Our expansive library provides access to thousands of resources, quiet study spaces, and research assistance."
     },
     {
       id: 5,
-      src: "../assets/images/college_gallery/football_aiml1.jpeg",
+      src: football,
       alt: "Athletics",
       caption: "ATHLETICS",
       description: "The athletics program offers competitive sports opportunities and promotes physical fitness and team building skills."
     },
     {
       id: 6,
-      src: "../assets/images/college_gallery/seminar.jpeg",
+      src: seminar,
       alt: "Global Programs",
       caption: "SEMINARIES",
       description: "Interactive seminars provide students with opportunities to engage with industry experts and expand their knowledge."
     },
     {
       id: 7,
-      src: "../assets/images/college_gallery/faculty_pp.jpg",
+      src: faculty,
       alt: "Faculty image",
       caption: "FACULTY",
       description: "Our distinguished faculty members are leaders in their fields, dedicated to student success and academic excellence."
     },
     {
       id: 8,
-      src: "../assets/images/college_gallery/pasttedx.jpg",
+      src: pasttedx,
       alt: "Student Activities",
       caption: "ACTIVITIES",
       description: "Students get to experience a variety of extracurricular activities that develop leadership skills and foster community."
     },
     {
       id: 9,
-      src: "../assets/images/college_gallery/student_activites.jpeg",
+      src: stuac,
       alt: "Innovation",
       caption: "STUDENT ACTIVITIES",
       description: "Engaging student activities create a dynamic campus atmosphere and provide opportunities for personal growth."
