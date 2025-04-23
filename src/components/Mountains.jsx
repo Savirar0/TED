@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import { gsap } from 'gsap';
+import PopupButton from './Popup';
 
 const generateStars = () => {
   return Array.from({ length: 200 }, () => ({
@@ -264,9 +265,13 @@ const MountainSection = () => {
               <div className="text-4xl font-bold">{countdown.seconds}</div>
               <div className="text-sm">Seconds</div>
             </div>
+            
           </div>
+          
         </div>
+        <PopupButton />
       </div>
+      
     </div>
   );
 };

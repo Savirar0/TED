@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import TBDPage from './pages/TBDPage';
 import ScheduleTWD from './pages/ScheduleTWD';
 import BookingsPage from './pages/bookingsPage';
+import Speakers from './pages/Speakers';
 
 const App = () => {
   const location = useLocation();
@@ -68,7 +69,7 @@ const App = () => {
        <div className="h-full bg-gray-50">
          <Routes>
            <Route path="/" element={<Homepage />} />
-           <Route path="/speakers" element={<SpeakersTWD />} />
+           <Route path="/speakers" element={<Speakers />} />
            <Route path="/schedule" element={<ScheduleTWD />} />
            <Route path="/team" element={<TeamPage />} />
            <Route path="/bookings" element={<BookingsPage />} />

@@ -12,7 +12,7 @@ export const TieredSponsors = () => {
 
   const sponsorsByTier = {
     platinum: [
-      { id: 1, name: 'Rotaract', logo: { src: Rotoract }, website: 'https://rotaractclubofhyderabadeast.blogspot.com', description: 'Rotaract Club Hyderabad East' }
+      { id: 1, name: 'Rotaract', logo: { src: Rotoract }, website: 'https://www.instagram.com/rchyderabadeast/', description: 'Rotaract Club Hyderabad East' }
 
     ],
     gold: [
