@@ -4,6 +4,13 @@ import chindas from '../assets/images/speakers/chindas.png';
 import moksha from '../assets/images/speakers/moksha.png';
 import kranthi from '../assets/images/speakers/kranthi.png';
 import venkatL from '../assets/images/speakers/venkatL.png';
+import soumen from '../assets/images/speakers/soumen.png';
+import shreyes from '../assets/images/speakers/shreyes.png';
+import gauj from '../assets/images/speakers/gauj.png';
+import srividya from '../assets/images/speakers/srividya.jpg';
+import ravikumar from '../assets/images/speakers/ravikumar.jpg';
+import nihar from '../assets/images/speakers/nihar.jpg';
+import { image } from 'framer-motion/client';
 
 
 const Speakers = () => {
@@ -13,7 +20,7 @@ const Speakers = () => {
     {
       id: 1,
       name: "Dr. Chaitali Das",
-      role: "Jute Revivalist,Social Reformer,  Social Entrepreneur, Mentor.",
+      role: "Jute Revivalist & Social Entrepreneur",
       image: chindas,
       bio: "Chaitali Das is the Director of Rakshak Group and the Founder of Route2Jute Pvt. Limited, a startup from the Indian Institute of Management Centre of Innovation Park. She established the Rakshak Foundation and serves on various national and international boards, including a business chamber of commerce. A Guinness World Record holder and former Mrs. International, she is known as the Queen of Jute for her innovative jute products. Chaitali is also recognized for her work in skilling prison inmates and advocates for sustainability, equal opportunity, and inclusive growth.",
     },
@@ -33,10 +40,52 @@ const Speakers = () => {
     },
     {
       id: 4,
-      name: " Venkat Lakshminarasimha",
+      name: "Mr. Venkat Lakshminarasimha",
       role: "Head of Solutions,  Dexian India.",
       image: venkatL,
-      bio: "",
+      bio: "Mr. Venkat Lakshminarasimha serves as the Head of Solutions at Dexian India, where he leads initiatives in digital transformation and cognitive projects. With a focus on business and product management, Mr. Lakshminarasimha has successfully expanded Dexian's Managed Services globally, overseeing teams across the US, Middle East, and India.",
+    },
+    {
+      id: 5,
+      name: "Mr. Soumen De",
+      role: "Global Technical Consultant at SGS",
+      image: soumen,
+      bio: "Soumen De is a passionate engineering leader with nearly three decades of global experience in industries like manufacturing, automobiles, and wind energy. He currently serves as a Global Technical Consultant at SGS, the world’s leading company in Testing, Inspection, and Certification. With 23 technical patents and numerous talks at national and international platforms, Soumen combines technical brilliance with practical wisdom. He has held key leadership roles in organizations like PMI and is a pro bono strategy advisor at APQP4Wind, shaping quality standards for the wind energy sector. Beyond his professional achievements, he is dedicated to mentoring the next generation, helping students navigate career confusion, overcome self-doubt, and build meaningful lives with purpose and clarity.",
+    },
+    {
+      id: 6, 
+      name: "Mr.Shravanth Gajula",
+      role: "Co-Founder, Adonmo",
+      image: gauj,
+      bio: "Sravanth Gajula is the co-founder of Adonmo, a Hyderabad-based startup revolutionizing outdoor advertising through smart, location-based digital displays. Recognized among the '40 under 40' by the media and entertainment industry, Sravanth is celebrated for his resilience and reliability, even under tight deadlines.",
+    },
+    {
+      id: 7,
+      name: "Mr. Shreyes Manyam",
+      role: "Founder, inflooo",
+      image: shreyes,
+      bio: "Shreyes Manyam is the founder of Inflooo, a platform designed to help brands connect with micro and nano influencers. With a background in engineering and a passion for digital marketing, Shreyes is dedicated to empowering creators and brands through data-driven influencer collaborations. He is fluent in Telugu and Hindi, and is based in Hyderabad, India.​",
+    }, 
+    {
+      id: 8,
+      name: "Mrs. Srividya Maharshi",
+      role: "Head of Digital at Infinitum Network Solutions and a powerhouse in media innovation and strategy",
+      image: srividya,
+      bio: "Say hello to Srividya Maharshi, Head of Digital at Infinitum Network Solutions and a powerhouse in media innovation and strategy. With a stellar track record from her time at Zee Studios, she’s led some of the most impactful campaigns across entertainment and branding. 🌟 A master of content, audience engagement, and platform growth — Srividya blends creativity, data, and strategy to drive real results in the digital world."
+    },
+    {
+      id: 9,
+      name: "Mr. Ravi Kumar Nadimpalli",
+      role: "Founder - Director Swamedha Educational Services",
+      image: ravikumar,
+      bio: "Introducing Mr. Ravi Kumar Nadimpalli — a visionary leader with over 25 years of experience in skill development, entrepreneurship, and human potential building. Known for empowering individuals and organizations with future-ready skills and a mindset of lifelong learning, Mr. Ravi Kumar brings passion, insight, and real-world wisdom to the stage."
+    },
+    {
+      id: 10,
+      name: "Mr. Nihar Dodagatta",
+      role: "Co-Founder of Codedale and a beloved tech influencer with over 530K+ Instagram followers and 180K+ YouTube subscribers! 🚀",
+      image: nihar,
+      bio: "Nihar Dodagatta, Co-Founder of Codedale and a beloved tech influencer with over 530K+ Instagram followers and 180K+ YouTube subscribers! 🚀 Passionate about making coding accessible in regional languages, Nihar creates content in Telugu to empower students from tier 2 & 3 colleges. Through Codedale, he’s helping thousands land their first tech job and build confidence along the way."
     },
   ];
 

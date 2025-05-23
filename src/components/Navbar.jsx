@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import logo from "../assets/logos/newlogo.png";
 import { Link } from "react-router-dom";
 
-
 const Navbar = ({ activeLink }) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,6 +18,7 @@ const Navbar = ({ activeLink }) => {
     hidden: { height: 0, opacity: 0 },
     visible: { height: "auto", opacity: 1 }
   };
+
   
   useEffect(() => {
     const handleScroll = () => {
@@ -40,7 +40,7 @@ const Navbar = ({ activeLink }) => {
   }, [isMobileMenuOpen]);
   
   const handleBookClick = () => {
-    window.location.href = "https://unstop.com"; //need to change this**
+    window.open("https://unstop.com/o/tUTik8s?utm_medium=Share&utm_source=shortUrl", "_blank");
   };
   
   const toggleMobileMenu = () => {
@@ -50,14 +50,10 @@ const Navbar = ({ activeLink }) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <nav className="flex items-center bg-black backdrop-blur-sm border-b border-gray-700 relative z-10">       
-        <div className="max-w-7xl mx-auto px-4 flex items-center w-full h-16 justify-between">
-          <div className="fmax-w-7xl mx-auto px-4 flex items-center w-full h-16 justify-center">
-            <img className="h-10 w-auto mx-auto md:mx-0" src={logo} alt="TEDx Sreyas Logo" /> 
-          </div>
-          
-          <button 
+        <div className="max-w-7xl mx-auto px-4 w-full h-16 flex justify-between items-center">
+          <button
             type="button" 
-            className="md:hidden absolute left-4 text-gray-300 focus:outline-none"
+            className="md:hidden flex items-center justify-center text-gray-300 focus:outline-none w-10"
             onClick={toggleMobileMenu}
             aria-expanded={isMobileMenuOpen}
             aria-label="Toggle navigation menu"
@@ -71,14 +67,22 @@ const Navbar = ({ activeLink }) => {
             </svg>
           </button>
           
-          {/*<button 
+          <div className="flex justify-center md:justify-start flex-1 md:flex-none">
+            <img 
+              className="h-8 w-auto md:h-10" 
+              src={logo} 
+              alt="TEDx Sreyas Logo" 
+            /> 
+          </div>
+          
+          <button 
             type="button" 
-            className="absolute right-4 text-red-600 hover:text-white border border-red-600 hover:bg-red-700 focus:ring-2 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-xs md:text-sm px-3 py-1.5 md:px-5 md:py-2.5 text-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900" 
-            // onClick={handleBookClick}
+            className="text-red-600 hover:text-white border border-red-600 hover:bg-red-700 focus:ring-2 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-xs md:text-sm px-3 py-1.5 md:px-5 md:py-2.5 text-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900" 
+            onClick={handleBookClick}
           >
             <span className="hidden md:inline">Get your Passes</span>
             <span className="md:hidden">Get Passes</span>
-          </button>*/}
+          </button>
         </div>
       </nav>
       

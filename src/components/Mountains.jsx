@@ -269,7 +269,7 @@ const MountainSection = () => {
           </div>
           
         </div>
-        <PopupButton />
+        {/*<PopupButton />*/}
       </div>
       
     </div>

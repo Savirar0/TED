@@ -11,10 +11,10 @@ import srinivas from '../assets/images/teams/webdev/Srinivas.png';
 import chaitra from '../assets/images/teams/hospitality/chaitra.png';
 import goutham from '../assets/images/teams/hospitality/goutham.png';
 import manugnya from '../assets/images/teams/hospitality/manugnya.png';
-import nithin from '../assets/images/teams/hospitality/nithin.png';
 import prachi from '../assets/images/teams/hospitality/prachi.png';
 import shashi from '../assets/images/teams/hospitality/shashi.png';
 import srivarun from '../assets/images/teams/hospitality/srivarun.png';
+import nithin from '../assets/images/teams/hospitality/nithin.png';
 import vishnu from '../assets/images/teams/sponsorship/vishnu.png';
 import harshini from '../assets/images/teams/sponsorship/harshini.jpg';
 import sritha from '../assets/images/teams/sponsorship/sritha.png';
@@ -127,7 +127,7 @@ const teams = {
         {
             name: 'M. Nithin',
             role: 'Member',
-            image: '#',
+            image: nithin,
             socials: {
                 linkedin: 'https://www.linkedin.com/in/nithin-m-803935355/',
                 instagram: 'https://www.instagram.com/clarkk_kvntt/'
@@ -284,7 +284,7 @@ const teams = {
                 instagram: 'https://www.instagram.com/navadeep_2077'
             }
         },
-        {
+        /*{
             name: 'Esvin Joshua',
             role: 'Co-Lead',
             image: josh,
@@ -293,10 +293,10 @@ const teams = {
                 linkedin: 'https://www.linkedin.com/in/esvin-joshua/',
                 instagram: 'https://www.instagram.com/esvinjoshua/'
             }
-        },
+        }*/,
         {
             name: 'Srinivas Yejarla',
-            role: 'Member',
+            role: 'Co-Lead',
             image: srinivas,
             socials: {
                 github: '#',

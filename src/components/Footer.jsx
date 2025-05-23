@@ -56,7 +56,7 @@ const Footer = () => {
         <div className="h-px bg-gray-700 my-12"></div>
 
         <div className="text-center text-white text-sm">
-          © 2025 TEDx Sreyas Institute. This independent TEDx event is operated under license from TED.
+          TEDx Sreyas Institute operated under license from <a href="https://www.ted.com/tedx" className="text-red-600 hover:underline" target="_blank">TED</a>.
         </div>
       </div>
     </footer>
