@@ -40,7 +40,7 @@ const imageMap = Object.fromEntries(
 const teams = {
     'CORE TEAM': [
         {
-            name: 'A. Hriday Reddy',
+            name: 'Sri Ananthula Hriday Reddy',
             role: 'Vice Chairman',
             image: hrd,
             socials: {}

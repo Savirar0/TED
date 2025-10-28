@@ -87,6 +87,15 @@ const Speakers = () => {
       image: nihar,
       bio: "Nihar Dodagatta, Co-Founder of Codedale and a beloved tech influencer with over 530K+ Instagram followers and 180K+ YouTube subscribers! 🚀 Passionate about making coding accessible in regional languages, Nihar creates content in Telugu to empower students from tier 2 & 3 colleges. Through Codedale, he’s helping thousands land their first tech job and build confidence along the way."
     },
+    {
+      id: 11, 
+      name: "Srividya Maharshi",
+      role: "Actress, Singer, Writer, Dancer, and Journalis",
+      image: "#",
+      bio: " Srividya Maharshi is also known as Palaparthi Sri Vidya, Sri Vidya Maharshi, Vidya (Chai Bisket) is an Actress, Singer, Writer, Dancer, and Journalist. Srividya Maharshi is also known as Palaparthi Sri Vidya, Sri Vidya Maharshi, Vidya (Chai Bisket) is an Actress, Singer, Writer, Dancer, and Journalist."
+    },
+    
+
   ];
 
   const openModal = (speaker) => {

@@ -244,29 +244,7 @@ const MountainSection = () => {
           </h1>
           
         
-          <div 
-            ref={countdownRef}
-            className="mt-8 flex justify-center space-x-4 text-white"
-          >
-            <div className="text-center">
-              <div className="text-4xl font-bold">{countdown.days} : </div>
-              <div className="text-sm">Days</div>
-            </div>
-            :
-            <div className="text-center">
-              <div className="text-4xl font-bold">{countdown.hours} : </div>
-              <div className="text-sm">Hours</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold">{countdown.minutes} :</div>
-              <div className="text-sm">Minutes</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold">{countdown.seconds}</div>
-              <div className="text-sm">Seconds</div>
-            </div>
-            
-          </div>
+          
           
         </div>
         {/*<PopupButton />*/}
