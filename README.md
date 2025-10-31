@@ -176,6 +176,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ### ⭐ Star this repo if you found it helpful!
 
-**Built with ❤️ and lots of ☕**
+**Built with ❤️ and lots of ☕ for TEDxSreyasInstitute**
 
 </div>
