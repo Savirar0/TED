@@ -72,24 +72,23 @@ The site will open at `http://localhost:3000` - now you're ready to roll! 🎉
 ---
 
 ## 📂 Project Structure
-
+---
 ```
-tedxsreyasinstitute/
-├── public/
-│   ├── assets/          
-│   └── index.html
+TEDxSreyasInstitute/
 ├── src/
+│   ├── assets/          # Images, videos, icons, and media files
+│   ├── codes/           # Core logic and utility code
 │   ├── components/      # Reusable React components
+│   ├── consts/          # Constants and configuration
 │   ├── pages/           # Page-level components
-│   ├── animations/      # GSAP animation configs
-│   ├── styles/          # Global styles and themes
-│   ├── utils/           # Helper functions
-│   ├── App.js           # Main app component
-│   └── index.js         # Entry point
-├── package.json
+│   ├── styles/          # Global styles and CSS modules
+│   ├── utils/           # Helper functions and utilities
+│   ├── App.jsx          # Main app component
+│   └── main.jsx         # Entry point
+├── package.json         # Dependencies and scripts
+├── testnavbar.jsx       # Navbar component tests
 └── README.md
 ```
-
 ---
 
 ## 🎨 Key Animations
